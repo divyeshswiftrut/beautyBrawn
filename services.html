@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/tailwind.config.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="overflow-x-hidden md:bg-white">
+    <!-- Navbar -->
+    <header class="">
+      <nav
+        class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto mt-[2vh] md:mt-[0.5vh]"
+      >
+        <!-- Logo -->
+        <div>
+          <a href="index.html">
+            <img
+              class="w-12 md:w-auto cursor-pointer hover:scale-105 duration-300"
+              src="assets/images/Mask group.svg"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5"
+        >
+          <ul
+            class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full"
+          >
+            <li>
+              <img
+                class="md:hidden ml-[60vw] w-14"
+                src="assets/images/stars.svg"
+                alt=""
+              />
+            </li>
+            <li>
+              <a
+                class="menu hover:text-01 duration-300 active"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="menu hover:text-01 duration-300" href="aboutUs.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="menu hover:text-01 duration-300" href="services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="menu hover:text-01 duration-300" href="gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a class="menu hover:text-01 duration-300" href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a class="menu hover:text-01 duration-300" href="contactUs.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <div
+            class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]"
+          >
+            <div>
+              <p class="w-full overflow-hidden whitespace-nowrap">
+                Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button and Mobile Menu Icon -->
+        <div class="flex items-center gap-6">
+          <button>
+            <img
+              class="hidden md:block w-36 hover:scale-105 duration-300"
+              src="assets/images/Group 71.svg"
+              alt=""
+            />
+            <ion-icon
+              name="menu"
+              class="text-3xl text-01 cursor-pointer md:hidden"
+              onclick="mobileMenu(this)"
+            ></ion-icon>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="relative flex w-[100%]">
+        <div class="relative flex w-[100%] overflow-hidden">
+          <img
+            class="flex w-[100vw] h-[88vw] md:w-[100vw] md:h-[33.86vw] object-cover md:translate-x-[5%] md:scale-110 md:object-[0%_22%]"
+            src="assets/images/about us/about us mobile 1.jpeg"
+            alt=""
+          />
+          <!-- <img
+            class="hidden md:block w-[100vw] h-[33.86vw] object-cover"
+            src="assets/images/about us/about us 1.jpeg"
+            alt=""
+          /> -->
+          <div
+            class="absolute inset-0 backdrop-blur-[10px] bg-01/50 md:w-[50vw]"
+          >
+            <img
+              class="absolute mt-[-11%] w-[15.9vw] hidden md:block"
+              src="assets/images/leaf.svg"
+              alt=""
+            />
+            <img
+              class="w-[19.2vw] md:w-[8.55vw] ml-[41.6vw] md:ml-[29.22vw] mt-[17vw] md:mt-[8vw]"
+              src="assets/images/stars white.svg"
+              alt=""
+            />
+            <div
+              class="ml-[5%] md:ml-[0%] text-[7vw] md:text-[3vw] font-playfair font-[700] text-white flex flex-col md:ml-[25%] mt-[4%] md:mt-[-2%]"
+            >
+              <h3>Services</h3>
+              <div
+                class="h-[0.7vw] md:h-[0.2vw] mt-[1%] bg-gradient-to-r from-white to-white/0 w-[28vw] md:w-32 rounded-lg"
+              ></div>
+            </div>
+            <p
+              class="font-alex font-[400] text-[12vw] md:text-[7vw] mt-[20%] md:mt-[10%] text-03/15 justify-self-center md:ml-[-4%]"
+            >
+              Beauty & Brawn
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services -->
+    <section>
+      <div class="relative flex bg-03 w-full flex-col md:mt-[0%] ">
+
+        <div class="absolute hidden md:block self-end mt-[-1%]">
+          <img class="w-[10vw]"  src="assets/images/flower 2.svg" alt="">
+        </div>
+        <div
+          class="absolute static hidden md:block text-[7vw] text-06 font-alex rotate-[-90deg] mt-[17%] ml-[-12.5%] opacity-[8%] whitespace-nowrap"
+        >
+          <p>Our Services</p>
+        </div>
+        <div
+          class="flex flex-col md:grid grid-cols-3 md:mt-[5%]   md:mx-auto md:gap-4"
+        >
+          <!-- Botox -->
+          <div  class="mx-[4vw] md:mx-0 bg-white  md:w-[24.27vw] md:h-[14.5vw] shadow-md hover:bg-gradient-to-b hover:from-01 hover:to-white  hover:scale-105 duration-300 my-[1.75vh]  md:my-[5%] rounded-lg ">
+            <div
+            class="flex bg-white hover:bg-05 md:m-[0.7%]  flex-col md:my-[1%] rounded-lg md:pr-[10.05vw]"
+            
+          >
+          <div>
+            <img
+              class="w-[15vw] md:w-[3.5vw] m-[3vw] md:m-[1vw]"
+              src="assets/images/botox.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col mt-[-20%] md:mt-[-30%] ml-[21vw] md:ml-[5.3vw] w-[75%] md:w-[150%]"
+          >
+            <h3
+              class="font-playfair text-01 font-[600] text-[5vw] md:text-[1.5vw]"
+            >
+              Botox
+            </h3>
+            <p
+              class="md:w-[21.25vw]  font-outfit text-[3.7vw] md:text-[1vw] font-[400] text-02 mt-[0.5vh] md:mt-[8%] md:ml-[-20%]"
+            >
+              Neurotoxins are an FDA approved treatment that have been used
+              medically since the 1970s. They are safe, highly effective.
+            </p>
+        
+          </div>
+          <div
+            class="border border-05 w-[92%] md:w-[145%] md:ml-[12%] mt-[3%] md:mt-[5%] mx-auto"
+          ></div>
+          <a href="services-details.html">
+            <div
+            class="flex flex-row ml-[3.5vw] md:ml-[1.2vw] my-[1.5vh] md:my-[2vh] items-center space-x-2 cursor-pointer"
+          >
+            <p class="text-01 font-manrope font-[500] text-[4vw] md:text-[1.1vw]">Read More</p>
+            <img class="md:w-[1vw] w-[4vw]" src="assets/images/arrows.svg" alt="" />
+          </div>
+          </a>
+        </div>
+          </div>
+
+          <!-- Fillers -->
+          <div class="mx-[4vw] md:mx-0 bg-white  md:w-[24.27vw] md:h-[14.5vw] shadow-md hover:bg-gradient-to-b hover:from-01 hover:to-white  hover:scale-105 duration-300 my-[1.75vh]  md:my-[5%] rounded-lg ">
+            <div
+            class="flex bg-white hover:bg-05 md:m-[0.7%]  flex-col md:my-[1%] rounded-lg md:pr-[10.05vw]"
+          >
+          <div>
+            <img
+              class="w-[15vw] md:w-[3.5vw] m-[3vw] md:m-[1vw]"
+              src="assets/images/fillers.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col mt-[-20%] md:mt-[-30%] ml-[21vw] md:ml-[5.3vw] w-[75%] md:w-[150%]"
+          >
+            <h3
+              class="font-playfair text-01 font-[600] text-[5vw] md:text-[1.5vw]"
+            >
+            Fillers
+            </h3>
+            <p
+              class="md:w-[21.25vw]  font-outfit text-[3.7vw] md:text-[1vw] font-[400] text-02 mt-[0.5vh] md:mt-[8%] md:ml-[-20%]"
+            >
+            Dermal fillers are non-surgical injectable gels made from hyaluronic acid - the featured ingredient in many moisturizers.
+            </p>
+        
+          </div>
+          <div
+            class="border border-05 w-[92%] md:w-[145%] md:ml-[12%] mt-[3%] md:mt-[5%] mx-auto"
+          ></div>
+          <a href="services-details.html">
+            <div
+            class="flex flex-row ml-[3.5vw] md:ml-[1.2vw] my-[1.5vh] md:my-[2vh] items-center space-x-2 cursor-pointer"
+          >
+            <p class="text-01 font-manrope font-[500] text-[4vw] md:text-[1.1vw]">Read More</p>
+            <img class="md:w-[1vw] w-[4vw]" src="assets/images/arrows.svg" alt="" />
+          </div>
+          </a>
+        </div>
+          </div>
+
+          <!-- Microneedling -->
+          <div class="mx-[4vw] md:mx-0 bg-white  md:w-[24.27vw] md:h-[14.5vw] shadow-md hover:bg-gradient-to-b hover:from-01 hover:to-white  hover:scale-105 duration-300 my-[1.75vh]  md:my-[5%] rounded-lg ">
+            <div
+            class="flex bg-white hover:bg-05 md:m-[0.7%]  flex-col md:my-[1%] rounded-lg md:pr-[10.05vw]"
+          >
+          <div>
+            <img
+              class="w-[15vw] md:w-[3.5vw] m-[3vw] md:m-[1vw]"
+              src="assets/images/Microneedling.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col mt-[-20%] md:mt-[-30%] ml-[21vw] md:ml-[5.3vw] w-[75%] md:w-[150%]"
+          >
+            <h3
+              class="font-playfair text-01 font-[600] text-[5vw] md:text-[1.5vw]"
+            >
+            Microneedling
+            </h3>
+            <p
+              class="md:w-[21.25vw]  font-outfit text-[3.7vw] md:text-[1vw] font-[400] text-02 mt-[0.5vh] md:mt-[8%] md:ml-[-20%]"
+            >
+            Microneedling with PRP is a minimally invasive procedure that creates micro wounds in the skin to stimulate collagen production.
+            </p>
+        
+          </div>
+          <div
+            class="border border-05 w-[92%] md:w-[145%] md:ml-[12%] mt-[3%] md:mt-[5%] mx-auto"
+          ></div>
+          <a href="services-details.html">
+            <div
+            class="flex flex-row ml-[3.5vw] md:ml-[1.2vw] my-[1.5vh] md:my-[2vh] items-center space-x-2 cursor-pointer"
+          >
+            <p class="text-01 font-manrope font-[500] text-[4vw] md:text-[1.1vw]">Read More</p>
+            <img class="md:w-[1vw] w-[4vw]" src="assets/images/arrows.svg" alt="" />
+          </div>
+          </a>
+        </div>
+          </div>
+
+          <!-- Platelet Rich Plasma  -->
+          <div class="mx-[4vw] md:mx-0 bg-white  md:w-[24.27vw] md:h-[14.5vw] shadow-md hover:bg-gradient-to-b hover:from-01 hover:to-white  hover:scale-105 duration-300 my-[1.75vh]  md:my-[5%] rounded-lg ">
+            <div
+            class="flex bg-white hover:bg-05 md:m-[0.7%]  flex-col md:my-[1%] rounded-lg md:pr-[10.05vw]"
+          >
+          <div>
+            <img
+              class="w-[15vw] md:w-[3.5vw] m-[3vw] md:m-[1vw]"
+              src="assets/images/Platelet Rich Plasma .svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col mt-[-20%] md:mt-[-30%] ml-[21vw] md:ml-[5.3vw] w-[75%] md:w-[150%]"
+          >
+            <h3
+              class="font-playfair text-01 font-[600] text-[5vw] md:text-[1.5vw]"
+            >
+            Platelet Rich Plasma 
+            </h3>
+            <p
+              class="md:w-[21.25vw]  font-outfit text-[3.7vw] md:text-[1vw] font-[400] text-02 mt-[0.5vh] md:mt-[8%] md:ml-[-20%]"
+            >
+            PRP Therapy or Platelet-Rich Plasma Therapy is a regenerative medicine that harnesses and amplifies natural growth factors .
+            </p>
+        
+          </div>
+          <div
+            class="border border-05 w-[92%] md:w-[145%] md:ml-[12%] mt-[3%] md:mt-[5%] mx-auto"
+          ></div>
+          <a href="services-details.html">
+            <div
+            class="flex flex-row ml-[3.5vw] md:ml-[1.2vw] my-[1.5vh] md:my-[2vh] items-center space-x-2 cursor-pointer"
+          >
+            <p class="text-01 font-manrope font-[500] text-[4vw] md:text-[1.1vw]">Read More</p>
+            <img class="md:w-[1vw] w-[4vw]" src="assets/images/arrows.svg" alt="" />
+          </div>
+          </a>
+        </div>
+          </div>
+
+          <!-- Chemical Peels -->
+          <div class="mx-[4vw] md:mx-0 bg-white  md:w-[24.27vw] md:h-[14.5vw] shadow-md hover:bg-gradient-to-b hover:from-01 hover:to-white  hover:scale-105 duration-300 my-[1.75vh]  md:my-[5%] rounded-lg ">
+            <div
+            class="flex bg-white hover:bg-05 md:m-[0.7%]  flex-col md:my-[1%] rounded-lg md:pr-[10.05vw]"
+          >
+          <div>
+            <img
+              class="w-[15vw] md:w-[3.5vw] m-[3vw] md:m-[1vw]"
+              src="assets/images/Chemical Peels.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col mt-[-20%] md:mt-[-30%] ml-[21vw] md:ml-[5.3vw] w-[75%] md:w-[150%]"
+          >
+            <h3
+              class="font-playfair text-01 font-[600] text-[5vw] md:text-[1.5vw]"
+            >
+            Chemical Peels
+            </h3>
+            <p
+              class="md:w-[21.25vw]  font-outfit text-[3.7vw] md:text-[1vw] font-[400] text-02 mt-[0.5vh] md:mt-[8%] md:ml-[-20%]"
+            >
+            Chemical peels are exfoliating solutions that are customized for different skin types and incorporate a variety of active ingredients.
+            </p>
+        
+          </div>
+          <div
+            class="border border-05 w-[92%] md:w-[145%] md:ml-[12%] mt-[3%] md:mt-[5%] mx-auto"
+          ></div>
+          <a href="services-details.html">
+            <div
+            class="flex flex-row ml-[3.5vw] md:ml-[1.2vw] my-[1.5vh] md:my-[2vh] items-center space-x-2 cursor-pointer"
+          >
+            <p class="text-01 font-manrope font-[500] text-[4vw] md:text-[1.1vw]">Read More</p>
+            <img class="md:w-[1vw] w-[4vw]" src="assets/images/arrows.svg" alt="" />
+          </div>
+          </a>
+        </div>
+          </div>
+
+          <!-- Sculptra -->
+          <div class="mx-[4vw] md:mx-0 bg-white  md:w-[24.27vw] md:h-[14.5vw] shadow-md hover:bg-gradient-to-b hover:from-01 hover:to-white  hover:scale-105 duration-300 my-[1.75vh]  md:my-[5%] rounded-lg ">
+            <div
+            class="flex bg-white hover:bg-05 md:m-[0.7%]  flex-col md:my-[1%] rounded-lg md:pr-[10.05vw]"
+          >
+          <div>
+            <img
+              class="w-[15vw] md:w-[3.5vw] m-[3vw] md:m-[1vw]"
+              src="assets/images/Sculptra.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col mt-[-20%] md:mt-[-30%] ml-[21vw] md:ml-[5.3vw] w-[75%] md:w-[150%]"
+          >
+            <h3
+              class="font-playfair text-01 font-[600] text-[5vw] md:text-[1.5vw]"
+            >
+            Sculptra
+            </h3>
+            <p
+              class="md:w-[21.25vw]  font-outfit text-[3.7vw] md:text-[1vw] font-[400] text-02 mt-[0.5vh] md:mt-[8%] md:ml-[-20%]"
+            >
+            Sculptra is an injectable that helps restore facial volume that has been lost due to aging and stimulates collagen production.
+            </p>
+        
+          </div>
+          <div
+            class="border border-05 w-[92%] md:w-[145%] md:ml-[12%] mt-[3%] md:mt-[5%] mx-auto"
+          ></div>
+          <a href="services-details.html">
+            <div
+            class="flex flex-row ml-[3.5vw] md:ml-[1.2vw] my-[1.5vh] md:my-[2vh] items-center space-x-2 cursor-pointer"
+          >
+            <p class="text-01 font-manrope font-[500] text-[4vw] md:text-[1.1vw]">Read More</p>
+            <img class="md:w-[1vw] w-[4vw]" src="assets/images/arrows.svg" alt="" />
+          </div>
+          </a>
+        </div>
+          </div>
+        
+      </div>
+      
+    </section>
+
+    <!-- Your Skin -->
+    <section>
+      <div class="relative  flex flex-col md:flex-row  overflow-hidden w-full pb-[7%] mt-[5%]">
+        <div>
+          <img class="w-[100vw] h-[91vw] md:w-[50vw] md:h-[24.27vw] object-cover object-[20%]" src="assets/images/your skin.jpeg" alt="">
+        </div>
+        <div class=" flex flex-col justify-center items-center bg-01 p-[5%]  w-full md:w-[50vw]">
+          <p class="font-playfair text-white font-[500] text-[6vw] md:text-[3vw]">Your Skin, Your Confidence</p>
+          <p class="font-outfit text-center text-white text-[3.5vw] md:text-[1vw] pt-[3%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci tellus, facilisis quis vehicula a, finibus </p>
+          <button ><img class="w-[35vw] md:w-[10vw] pt-[17%] hover:scale-105 duration-300" src="assets/images/book now white btn.svg" alt=""></button>
+        </div>
+      </div>
+    </section> 
+
+    <!-- Latest Blogs -->
+    <section>
+      <div class="relative  flex flex-col md:flex-row overflow-hidden md:overflow-visible w-full  md:pb-[2%]">
+        <div
+        class="absolute w-full static hidden md:block text-[6vw] font-alex rotate-[-90deg] text-06 my-[-31%] ml-[-45%] opacity-[8%] whitespace-nowrap"
+      >
+        <p>Latest Blog</p>
+      </div>
+        <div class="flex flex-col ml-[5%]  md:ml-[12%] w-full">
+          <div 
+             class="w-full  text-[7vw]  md:text-[2.5vw]  md:w-[60%]  md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
+            >
+            <h3 class="">Our Latest Blog</h3>
+            <div
+             class="h-[0.4vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[40%] md:w-[8vw]   "
+             >
+            </div>
+          </div>
+          <div class="flex flex-col text-left font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] w-[90%] md:w-[32.09vw]  pt-[3%] md:pt-[2.5%]">
+            <p class="pb-[2%]">Nullam tristique blandit pharetra maecenas molestie justoven nec viverra element. Suspendisse at pharetra quam. Fuscenal nunca sit amet pharetra mag nibh sit amet rhoncus amet nae nam ac ni ut sapien facilisis porttitor lacinia dolor.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim convallis magna et interdum. Pellentesque </p>
+          </div>
+        </div>
+        <!-- Blogs Div -->
+        <div class="w-full overflow-x-scroll md:overflow-x-hidden scrollbar-hide md:overflow-y-hidden flex md:ml-[-20%] md:h-[25vw]">
+          <!-- Individual Blog Item -->
+          <div class="flex-shrink-0 flex flex-col relative w-[63.7vw] md:w-[18.90vw] ml-[5%] pt-[3%] cursor-pointer hover:scale-105 duration-300">
+            <div class="relative w-full">
+              <div class="absolute">
+                <p class="absolute ml-[48.7vw] md:ml-[15vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">&nbsp;20<br>Apr</p>
+                <img class="ml-[46vw] md:ml-[14.5vw]  w-[12vw] md:w-[3vw]" src="assets/images/bg-date.svg" alt="">
+              </div>
+              <div class="rounded-t-lg">
+                <img class="rounded-t-lg object-cover h-[37vw] md:h-[11.25vw] w-[63.7vw] md:w-[18.90vw]" src="assets/images/blog-1.jpeg" alt="">
+                <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                  <p class="text-left font-playfair font-[600] text-01 text-[4.2vw] md:text-[1.3vw]">A Revolutionary Approach to Regaining Your Confidence</p>
+                  <div class="flex flex-row gap-2">
+                    <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More </p>
+                    <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Add more blog items below -->
+          <div class="flex-shrink-0 flex flex-col relative w-[63.7vw] md:w-[18.90vw] ml-[5%] pt-[3%] mr-[5%] cursor-pointer hover:scale-105 duration-300">
+            <div class="relative w-full">
+              <div class="absolute">
+                <p class="absolute ml-[48.7vw] md:ml-[15vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">&nbsp;25<br>Mar</p>
+                <img class="ml-[46vw] md:ml-[14.5vw]  w-[12vw] md:w-[3vw]" src="assets/images/bg-date.svg" alt="">
+              </div>
+              <div class="rounded-t-lg">
+                <img class="rounded-t-lg object-cover h-[37vw] md:h-[11.25vw] w-[63.7vw] md:w-[18.90vw]" src="assets/images/blog-2.jpeg" alt="">
+                <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                  <p class="text-left font-playfair font-[600] text-01 text-[4.2vw] md:text-[1.3vw] ">A Revolutionary Approach to Regaining Your Confidence</p>
+                  <div class="flex flex-row gap-2">
+                    <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More </p>
+                    <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" md:absolute md:mt-[12.9%] md:ml-[12%] flex ml-[5%] py-[5%]">
+          <button><img  class="w-[30vw] md:w-[9vw] hover:scale-105 duration-300" src="assets/images/View More BTn.svg" alt=""></button>
+        </div>
+        
+
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="bg-white py-[15%] md:py-[0%]">
+      <div class="relative text-center mb-8 md:justify-center">
+        <div
+          class="absolute w-full static hidden md:block text-06 font-alex text-[7vw] rotate-[-90deg] ml-[45%] mt-[6%] opacity-[8%] whitespace-nowrap"
+        >
+          <p>Testimonial</p>
+        </div>
+        <h2 class="text-3xl font-playfair font-[700] text-01 mt-[-9%] md:mt-[2%] md:text-[3.5vw] ">Testimonial</h2>
+        <div
+            class="h-[1.75px] md:h-[2px] mt-[1.5%] md:mt-[0.75%] bg-gradient-to-r from-01 to-03 w-[30%] md:w-32 ml-[35%] md:ml-[43%]"
+           ></div>
+      </div>
+    
+      <div class="relative md:w-full md:pl-[7.5%]   overflow-hidden md:mt-[3%]">
+        <!-- Carousel Wrapper -->
+        <div id="testimonialSlider" class="flex pb-[1%] md:justify-center transition-transform duration-300">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-4  mx-[5%] md:mx-[-3%] w-[90%] md:w-[40%]  rounded-lg shadow-md flex-shrink-0 hover:scale-105 duration-300">
+            <div class="relative flex flex-row space-x-4 mb-4">
+              <div class="w-[14vw] h-[14vw] md:w-[4.5vw] md:h-[4.5vw] rounded-full border-2 border-01 overflow-hidden">
+                <img class="w-full h-full object-cover" src="assets/images/testimonial 1.jpeg" alt="Person 1">
+              </div>
+              <div>
+                <h3 class=" font-semibold md:text-[1.5vw] text-[5vw]  font-playfair text-01">Kakal T</h3>
+                <div class="flex items-center">
+                  <span class="text-yellow-400 text-[4vw] md:text-[1.1vw]">⭐⭐⭐⭐⭐</span>
+                </div>
+              </div>
+              <div class="absolute top-0 right-0 opacity-10">
+                <img class="w-[8vw] md:w-[3.5vw]" src="assets/images/coma.svg" alt="Quote">
+              </div>
+            </div>
+            <p class="text-[4vw] md:text-[1.2vw] text-02 font-outfit">
+              The Best Salon in the town. I have been their client since 14 years. No issues, no complaints. Consistently superb services, excellent staff! Thank you Rahul for always being gentle, kind, and providing the highest satisfaction!
+            </p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-4 mx-[5%]  w-[90%] md:w-[40%]  rounded-lg shadow-md flex-shrink-0 hover:scale-105 duration-300">
+            <div class="relative flex flex-row space-x-4 mb-4">
+              <div class="w-[14vw] h-[14vw] md:w-[4.5vw] md:h-[4.5vw] rounded-full border-2 border-01  overflow-hidden">
+                <img class="w-full h-full object-cover" src="assets/images/testimonial 2.jpeg" alt="Person 2">
+              </div>
+              <div>
+                <h3 class="font-semibold md:text-[1.5vw] text-[5vw] font-playfair text-01">Shreya G</h3>
+                <div class="flex items-center">
+                  <span class="text-yellow-400 text-[4vw] md:text-[1.1vw]">⭐⭐⭐⭐⭐</span>
+                </div>
+              </div>
+              <div class="absolute top-0 right-0 opacity-10">
+                <img class="w-[8vw] md:w-[3.5vw]" src="assets/images/coma.svg" alt="Quote">
+              </div>
+            </div>
+            <p class="text-[4vw] md:text-[1.2vw] text-02 font-outfit">
+              The Hair Lab Unisex Salon is the best you would get in Surat. I have known Rahul for 13 years now and he is the best Hair -dresser that I know. Anyone looking for a change in his/her look or want to get their hair colored, their premium and friendly services will make you their 
+            </p>
+          </div>
+          <!-- Add more testimonials as needed -->
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <button id="prev" class="hidden absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+          &lt;
+        </button>
+        <button id="next" class="hidden absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+          &gt;
+        </button>
+      </div>
+    
+      <!-- Pagination Dots -->
+      <div id="paginationDots" class="flex justify-center mt-8 space-x-2 md:pb-[5%]">
+        <button class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"></button>
+        <button class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"></button>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="relative bg-05 bg-opacity-[50%] flex flex-col overflow-hidden w-full pt-[4%] md:pt-[2%]"
+      >
+        <div
+          class="hidden md:flex absolute w-full justify-between font-alex font-[400] text-06 text-[3vw] opacity-[10%] mt-[-2.5%]"
+        >
+          <p>Beauty & Brawn</p>
+          <p>Beauty & Brawn</p>
+        </div>
+        <div class="hidden w-[10vw] md:flex absolute right-[-2%] mt-[1%]">
+          <img src="assets/images/footer leafs.svg" alt="" />
+        </div>
+        <!-- first Div -->
+        <div
+          class="flex flex-col md:flex-row w-full md:justify-center md:items-center"
+        >
+          <div
+            class="flex gap-[2vw] md:gap-[1vw] items-center ml-[56%] md:ml-[11%] pt-[7%] md:pt-[0%]"
+          >
+            <p
+              class="font-playfair font-[600] text-01 text-[4.5vw] md:text-[1.3vw]"
+            >
+              Follow US :
+            </p>
+            <a href="#"
+              ><img
+                class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
+                src="assets/images/insta.svg"
+                alt="Instagram"
+            /></a>
+            <a href="#" class="md:ml-[-4%]"
+              ><img
+                class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
+                src="assets/images/fb.svg"
+                alt="Facebook"
+            /></a>
+          </div>
+          <div
+            class="flex w-[24.55vw] max-w-[92.06px] ml-[4%] md:ml-[25%] mt-[-14%] md:mt-[0%]"
+          >
+            <a href="index.html"
+              ><img
+                class="w-full hover:scale-105 duration-300"
+                src="assets/images/Mask group.svg"
+                alt=""
+            /></a>
+          </div>
+          <div class="flex pt-[5%] md:pt-[1%] mx-auto">
+            <input
+              class="rounded-lg bg-05 bg-opacity-[50%] w-[92vw] md:w-[24.22vw] h-[10.67vw] md:h-[2.6vw] border-[1px] border-09 font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] pl-[4%] focus:outline-none focus:ring-2 focus:ring-01 focus:border-01 transition-all duration-300 ease-in-out hover:border-01"
+              type="email"
+              name="email"
+              id=""
+              placeholder="Your Email Address"
+            />
+          </div>
+        </div>
+        <!--Divider  -->
+        <div
+          class="border border-07 w-[92%] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"
+        ></div>
+        <!-- Second Div -->
+        <div
+          class="grid grid-cols-2 md:w-[85%] mx-auto md:ml-[10%] md:grid-cols-5 gap-4 md:gap-2 mt-[5%] md:mt-[0.5%] ml-[4%]"
+        >
+          <!--Grid 1  -->
+          <div class="md:w-[70%] md:justify-items-center md:ml-[5%]">
+            <div
+              class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[35%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
+            >
+              <h3 class="">Address</h3>
+              <div
+                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
+              ></div>
+            </div>
+            <p
+              class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]"
+            >
+              17539 Chatsworth St Granada Hills, CA 91344
+            </p>
+          </div>
+          <!-- Divider -->
+          <div
+            class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center ml-[20%]"
+          ></div>
+          <!--Grid 2  -->
+          <div class="md:w-[150%] w-[95%] md:justify-items-center md:ml-[-30%]">
+            <div
+              class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[50%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
+            >
+              <h3 class="">Quick Links</h3>
+              <div
+                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
+              ></div>
+            </div>
+            <div
+              class="flex font-outfit font-[400] text-[4vw] md:text-[1vw] md:gap-2 gap-1 flex-wrap md:text-center text-02 mt-[3%]"
+            >
+              <a
+                class="hover:scale-105 hover:text-01 duration-300"
+                href="index.html"
+                >Home</a
+              >
+              <p class="text-01">|</p>
+              <a
+                class="hover:scale-105 hover:text-01 duration-300"
+                href="aboutUs.html"
+                >About Us</a
+              >
+              <p class="text-01">|</p>
+              <a
+                class="hover:scale-105 hover:text-01 duration-300"
+                href="services.html"
+                >Services</a
+              >
+              <p class="text-01">|</p>
+              <a
+                class="hover:scale-105 hover:text-01 duration-300"
+                href="gallery.html"
+                >Gallery</a
+              >
+              <p class="text-01">|</p>
+              <a
+                class="hover:scale-105 hover:text-01 duration-300"
+                href="blog.html"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <!-- Divider -->
+          <div
+            class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center md:ml-[50%]"
+          ></div>
+          <!--Grid 3  -->
+          <div class="md:w-[60%] mx-auto justify-items-center md:ml-[-15%]">
+            <div
+              class="w-full md:ml-[16%] text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
+            >
+              <h3 class="">Contact</h3>
+              <div
+                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
+              ></div>
+            </div>
+            <p
+              class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]"
+            >
+              info@beautyandbrawnaesthetics.com<br />818-626-3507
+            </p>
+          </div>
+        </div>
+        <!--Divider  -->
+        <div
+          class="border border-07 w-[100%] mt-[5%] md:mt-[0.5%] mx-auto"
+        ></div>
+        <!-- Third Div -->
+        <div
+          class="flex w-full justify-between px-[4%] md:px-[10.5%] md:py-[0.5%] font-outfit font-[400] text-02 text-[4vw] md:text-[1vw]"
+        >
+          <p>&copy 2024 beauty& brawn</p>
+          <a class="hover:text-01 hover:scale-105 duration-300" href="3"
+            ><p>Privacy Policy</p></a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="src/script.js"></script>
+</html>
