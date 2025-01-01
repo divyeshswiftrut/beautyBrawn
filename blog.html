@@ -1,303 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="src/tailwind.config.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  <body class="overflow-x-hidden md:bg-white">
-    <!-- Navbar -->
-    <header class="">
-      <nav
-        class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto mt-[2vh] md:mt-[0.5vh]"
-      >
-        <!-- Logo -->
-        <div>
-          <a href="index.html">
-            <img
-              class="w-12 md:w-auto cursor-pointer hover:scale-105 duration-300"
-              src="assets/images/Mask group.svg"
-              alt=""
-            />
-          </a>
-        </div>
 
-        <!-- Navigation Links -->
-        <div
-          class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5"
-        >
-          <ul
-            class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full"
-          >
-            <li>
-              <img
-                class="md:hidden ml-[60vw] w-14"
-                src="assets/images/stars.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <a
-                class="menu hover:text-01 duration-300 active"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="aboutUs.html"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="services.html"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="gallery.html"
-                >Gallery</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="blog.html"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="contactUs.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <div
-            class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]"
-          >
-            <div>
-              <p class="w-full overflow-hidden whitespace-nowrap">
-                Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
-              </p>
-            </div>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
 
-        <!-- Button and Mobile Menu Icon -->
-        <div class="flex items-center gap-6">
-          <button>
-            <img
-              class="hidden md:block w-36 hover:scale-105 duration-300"
-              src="assets/images/Group 71.svg"
-              alt=""
-            />
-            <ion-icon
-              name="menu"
-              class="text-3xl text-01 cursor-pointer md:hidden"
-              onclick="mobileMenu(this)"
-            ></ion-icon>
-          </button>
-        </div>
-      </nav>
-    </header>
-
-    <section>
-      <div class="pt-[2%] md:pt-[0.2%] w-full">
-        <div class="flex">
-          <img
-            class="w-[100vw] h-[88vw] object-cover"
-            src="assets/images/about us/about us mobile 1.jpeg"
-            alt=""
-          />
-        </div>
+<body class="overflow-x-hidden md:bg-white">
+  <!-- Navbar -->
+  <header class="">
+    <nav class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto mt-[2vh] md:mt-[0.5vh]">
+      <!-- Logo -->
+      <div>
+        <a href="index.html">
+          <img class="w-12 md:w-auto cursor-pointer hover:scale-105 duration-300" src="assets/images/Mask group.svg"
+            alt="" />
+        </a>
       </div>
-    </section>
 
-    <footer>
+      <!-- Navigation Links -->
       <div
-        class="relative bg-05 bg-opacity-[50%] flex flex-col overflow-hidden w-full pt-[4%] md:pt-[2%]"
-      >
-        <div
-          class="hidden md:flex absolute w-full justify-between font-alex font-[400] text-06 text-[3vw] opacity-[10%] mt-[-2.5%]"
-        >
-          <p>Beauty & Brawn</p>
-          <p>Beauty & Brawn</p>
-        </div>
-        <div class="hidden w-[10vw] md:flex absolute right-[-2%] mt-[1%]">
-          <img src="assets/images/footer leafs.svg" alt="" />
-        </div>
-        <!-- first Div -->
-        <div
-          class="flex flex-col md:flex-row w-full md:justify-center md:items-center"
-        >
-          <div
-            class="flex gap-[2vw] md:gap-[1vw] items-center ml-[56%] md:ml-[11%] pt-[7%] md:pt-[0%]"
-          >
-            <p
-              class="font-playfair font-[600] text-01 text-[4.5vw] md:text-[1.3vw]"
-            >
-              Follow US :
-            </p>
-            <a href="#"
-              ><img
-                class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
-                src="assets/images/insta.svg"
-                alt="Instagram"
-            /></a>
-            <a href="#" class="md:ml-[-4%]"
-              ><img
-                class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
-                src="assets/images/fb.svg"
-                alt="Facebook"
-            /></a>
-          </div>
-          <div
-            class="flex w-[24.55vw] max-w-[92.06px] ml-[4%] md:ml-[25%] mt-[-14%] md:mt-[0%]"
-          >
-            <a href="index.html"
-              ><img
-                class="w-full hover:scale-105 duration-300"
-                src="assets/images/Mask group.svg"
-                alt=""
-            /></a>
-          </div>
-          <div class="flex pt-[5%] md:pt-[1%] mx-auto">
-            <input
-              class="rounded-lg bg-05 bg-opacity-[50%] w-[92vw] md:w-[24.22vw] h-[10.67vw] md:h-[2.6vw] border-[1px] border-09 font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] pl-[4%] focus:outline-none focus:ring-2 focus:ring-01 focus:border-01 transition-all duration-300 ease-in-out hover:border-01"
-              type="email"
-              name="email"
-              id=""
-              placeholder="Your Email Address"
-            />
-          </div>
-        </div>
-        <!--Divider  -->
-        <div
-          class="border border-07 w-[92%] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"
-        ></div>
-        <!-- Second Div -->
-        <div
-          class="grid grid-cols-2 md:w-[85%] mx-auto md:ml-[10%] md:grid-cols-5 gap-4 md:gap-2 mt-[5%] md:mt-[0.5%] ml-[4%]"
-        >
-          <!--Grid 1  -->
-          <div class="md:w-[70%] md:justify-items-center md:ml-[5%]">
-            <div
-              class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[35%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-            >
-              <h3 class="">Address</h3>
-              <div
-                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
-              ></div>
-            </div>
-            <p
-              class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]"
-            >
-              17539 Chatsworth St Granada Hills, CA 91344
+        class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5">
+        <ul
+          class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full">
+          <li>
+            <img class="md:hidden ml-[60vw] w-14" src="assets/images/stars.svg" alt="" />
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300 active" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="aboutUs.html">About Us</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="services.html">Services</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="contactUs.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]">
+          <div>
+            <p class="w-full overflow-hidden whitespace-nowrap">
+              Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
             </p>
           </div>
-          <!-- Divider -->
-          <div
-            class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center ml-[20%]"
-          ></div>
-          <!--Grid 2  -->
-          <div class="md:w-[150%] w-[95%] md:justify-items-center md:ml-[-30%]">
-            <div
-              class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[50%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-            >
-              <h3 class="">Quick Links</h3>
-              <div
-                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
-              ></div>
-            </div>
-            <div
-              class="flex font-outfit font-[400] text-[4vw] md:text-[1vw] md:gap-2 gap-1 flex-wrap md:text-center text-02 mt-[3%]"
-            >
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="index.html"
-                >Home</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="aboutUs.html"
-                >About Us</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="services.html"
-                >Services</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="gallery.html"
-                >Gallery</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="blog.html"
-                >Blog</a
-              >
-            </div>
-          </div>
-          <!-- Divider -->
-          <div
-            class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center md:ml-[50%]"
-          ></div>
-          <!--Grid 3  -->
-          <div class="md:w-[60%] mx-auto justify-items-center md:ml-[-15%]">
-            <div
-              class="w-full md:ml-[16%] text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-            >
-              <h3 class="">Contact</h3>
-              <div
-                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
-              ></div>
-            </div>
-            <p
-              class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]"
-            >
-              info@beautyandbrawnaesthetics.com<br />818-626-3507
-            </p>
-          </div>
-        </div>
-        <!--Divider  -->
-        <div
-          class="border border-07 w-[100%] mt-[5%] md:mt-[0.5%] mx-auto"
-        ></div>
-        <!-- Third Div -->
-        <div
-          class="flex w-full justify-between px-[4%] md:px-[10.5%] md:py-[0.5%] font-outfit font-[400] text-02 text-[4vw] md:text-[1vw]"
-        >
-          <p>&copy 2024 beauty& brawn</p>
-          <a class="hover:text-01 hover:scale-105 duration-300" href="3"
-            ><p>Privacy Policy</p></a
-          >
         </div>
       </div>
-    </footer>
-  </body>
-  <script src="src/script.js"></script>
+
+      <!-- Button and Mobile Menu Icon -->
+      <div class="flex items-center gap-6">
+        <button>
+          <img class="hidden md:block w-36 hover:scale-105 duration-300" src="assets/images/Group 71.svg" alt="" />
+          <ion-icon name="menu" class="text-3xl text-01 cursor-pointer md:hidden" onclick="mobileMenu(this)"></ion-icon>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section>
+    <div class="relative flex w-[100%]">
+      <div class="relative flex w-[100%] overflow-hidden">
+        <img
+          class="flex w-[100vw] h-[88vw] md:w-[100vw] md:h-[33.86vw] object-cover md:translate-x-[10%] md:scale-110 md:object-[0%_22%]"
+          src="assets/images/gallery/g2.jfif" alt="" />
+
+        <div class="absolute inset-0 backdrop-blur-[10px] bg-01/50 md:w-[50vw]">
+          <img class="absolute mt-[-11%] w-[15.9vw] hidden md:block" src="assets/images/leaf.svg" alt="" />
+          <img class="w-[19.2vw] md:w-[8.55vw] ml-[41.6vw] md:ml-[29.22vw] mt-[17vw] md:mt-[8vw]"
+            src="assets/images/stars white.svg" alt="" />
+          <div
+            class="ml-[5%] md:ml-[0%] text-[7vw] md:text-[3vw] font-playfair font-[700] text-white flex flex-col md:ml-[25%] mt-[4%] md:mt-[-2%]">
+            <h3>Blog</h3>
+            <div
+              class="h-[0.7vw] md:h-[0.2vw] mt-[1%] bg-gradient-to-r from-white to-white/0 w-[28vw] md:w-32 rounded-lg">
+            </div>
+          </div>
+          <p
+            class="font-alex font-[400] text-[12vw] md:text-[7vw] mt-[20%] md:mt-[10%] text-03/15 justify-self-center md:ml-[-4%]">
+            Beauty & Brawn
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Blogs -->
+  <section>
+    <div class="relative  flex flex-col overflow-hidden md:overflow-visible w-full h-full md:pb-[11%]">
+      <div
+        class="absolute w-full static hidden md:block text-[6vw] font-alex rotate-[-90deg] text-06 my-[15%] ml-[45%] opacity-[8%] whitespace-nowrap">
+        <p>Latest Blog</p>
+      </div>
+
+      <!-- Blogs Div -->
+      <!-- Blogs Container -->
+      <div id="blogsContainer" class="w-full md:w-[75vw] md:mx-auto flex flex-wrap md:grid md:grid-cols-3 md:gap-[3%]  mt-[10%] md:mt-[7%] ">
+        <!-- Initial Blog Items (Visible by Default) -->
+
+        <!-- A Revolutionary Approach to Regaining Your Confidence -->
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[92vw] md:w-[23.6vw] mx-auto md:mx-[0%] pt-[3%]  cursor-pointer hover:scale-105 duration-300">
+          <!-- Blog Content -->
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[74vw] md:ml-[18vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;08<br>Apr
+              </p>
+              <img class="ml-[70vw] md:ml-[17.5vw] w-[16vw] h-[20.54vw] md:w-[3vw] md:h-[4.58vw] md:mt-[-0.5%]"
+                src="assets/images/bg-date.svg" alt="">
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[53.34vw] md:h-[12.87vw] w-[92vw] md:w-[23.6vw]"
+                src="assets/images/blog-2.jpeg" alt="">
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[5vw] md:text-[1.3vw]">A Revolutionary
+                  Approach to Regaining Your Confidence</p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More</p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Marvels of Sculptra at Beauty & Brawn Aesthetics -->
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[92vw] md:w-[23.6vw] mx-auto md:mx-[0%] pt-[3%]  cursor-pointer hover:scale-105 duration-300">
+          <!-- Blog Content -->
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[74vw] md:ml-[18vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;20<br>Mar
+              </p>
+              <img class="ml-[70vw] md:ml-[17.5vw] w-[16vw] h-[20.54vw] md:w-[3vw] md:h-[4.58vw] md:mt-[-0.5%]"
+                src="assets/images/bg-date.svg" alt="">
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[53.34vw] md:h-[12.87vw] w-[92vw] md:w-[23.6vw]"
+                src="assets/images/about us/about us 2.jpeg" alt="">
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[5vw] md:text-[1.3vw]">The Marvels of Sculptra at Beauty & Brawn Aesthetics</p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More</p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exploring the Benefits of Microneedling and PRP Therapy -->
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[92vw] md:w-[23.6vw] mx-auto md:mx-[0%] pt-[3%]  cursor-pointer hover:scale-105 duration-300">
+          <!-- Blog Content -->
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[74vw] md:ml-[18vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;15<br>Mar
+              </p>
+              <img class="ml-[70vw] md:ml-[17.5vw] w-[16vw] h-[20.54vw] md:w-[3vw] md:h-[4.58vw] md:mt-[-0.5%]"
+                src="assets/images/bg-date.svg" alt="">
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[53.34vw] md:h-[12.87vw] w-[92vw] md:w-[23.6vw]"
+                src="assets/images/about us/follow us 6.jpeg" alt="">
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[5vw] md:text-[1.3vw]">Exploring the Benefits of Microneedling and PRP Therapy</p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More</p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Ageless Appeal of Neurotoxin Treatment -->
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[92vw] md:w-[23.6vw] mx-auto  md:mx-[0%] pt-[3%]  cursor-pointer hover:scale-105 duration-300">
+          <!-- Blog Content -->
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[74vw] md:ml-[18vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;01<br>Mar
+              </p>
+              <img class="ml-[70vw] md:ml-[17.5vw] w-[16vw] h-[20.54vw] md:w-[3vw] md:h-[4.58vw] md:mt-[-0.5%]"
+                src="assets/images/bg-date.svg" alt="">
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[53.34vw] md:h-[12.87vw] w-[92vw] md:w-[23.6vw]"
+                src="assets/images/gallery/g1.jfif" alt="">
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[5vw] md:text-[1.3vw]">The Ageless Appeal of Neurotoxin Treatment</p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More</p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Blog Items (Initially Hidden) -->
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[92vw] md:w-[23.6vw] mx-auto  md:mx-[0%] pt-[3%] cursor-pointer hover:scale-105 duration-300  hidden md:block blog-item ">
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[74vw] md:ml-[18vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;23<br>Aug
+              </p>
+              <img class="ml-[70vw] md:ml-[17.5vw] w-[16vw] h-[20.54vw] md:w-[3vw] md:h-[4.58vw] md:mt-[-0.5%]"
+                src="assets/images/bg-date.svg" alt="">
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[53.34vw] md:h-[12.87vw] w-[92vw] md:w-[23.6vw]"
+                src="assets/images/blogs/b5.jfif" alt="">
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[5vw] md:text-[1.3vw]">Capturing The World In Beautifly Frames</p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More</p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[92vw] md:w-[23.6vw] mx-auto  md:mx-[0%] pt-[3%] cursor-pointer hover:scale-105 duration-300 hidden md:block blog-item">
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[74vw] md:ml-[18vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;08<br>Apr
+              </p>
+              <img class="ml-[70vw] md:ml-[17.5vw] w-[16vw] h-[20.54vw] md:w-[3vw] md:h-[4.58vw] md:mt-[-0.5%]"
+                src="assets/images/bg-date.svg" alt="">
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[53.34vw] md:h-[12.87vw] w-[92vw] md:w-[23.6vw]"
+                src="assets/images/services details/second section third img.jpeg" alt="">
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[5vw] md:text-[1.3vw]">Breathtaking Travel Spots To Add To Your Bucket List</p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More</p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[92vw] md:w-[23.6vw] mx-auto pt-[3%] cursor-pointer hover:scale-105 duration-300 hidden md:block blog-item">
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[74vw] md:ml-[18vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;01<br>Mar
+              </p>
+              <img class="ml-[70vw] md:ml-[17.5vw] w-[16vw] h-[20.54vw] md:w-[3vw] md:h-[4.58vw] md:mt-[-0.5%]"
+                src="assets/images/bg-date.svg" alt="">
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[53.34vw] md:h-[12.87vw] w-[92vw] md:w-[23.6vw]"
+                src="assets/images/blogs/b7.jfif" alt="">
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[5vw] md:text-[1.3vw]">What To Do To Make Skin Healthy And Soft</p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More</p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[92vw] md:w-[23.6vw] mx-auto pt-[3%] cursor-pointer hover:scale-105 duration-300 hidden md:block blog-item">
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[74vw] md:ml-[18vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;20<br>Mar
+              </p>
+              <img class="ml-[70vw] md:ml-[17.5vw] w-[16vw] h-[20.54vw] md:w-[3vw] md:h-[4.58vw] md:mt-[-0.5%]"
+                src="assets/images/bg-date.svg" alt="">
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[53.34vw] md:h-[12.87vw] w-[92vw] md:w-[23.6vw]"
+                src="assets/images/bb product.jpeg" alt="">
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[5vw] md:text-[1.3vw]">The Marvels of Sculptra at Beauty & Brawn Aesthetics</p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More</p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[92vw] md:w-[23.6vw] mx-auto pt-[3%] cursor-pointer hover:scale-105 duration-300 hidden md:block blog-item">
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[74vw] md:ml-[18vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;15<br>Mar
+              </p>
+              <img class="ml-[70vw] md:ml-[17.5vw] w-[16vw] h-[20.54vw] md:w-[3vw] md:h-[4.58vw] md:mt-[-0.5%]"
+                src="assets/images/bg-date.svg" alt="">
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[53.34vw] md:h-[12.87vw] w-[92vw] md:w-[23.6vw]"
+                src="assets/images/blogs/b9.jfif" alt="">
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[5vw] md:text-[1.3vw]">A Revolutionary
+                  Approach to Regaining Your Confidence</p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">Read More</p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more hidden blogs as needed -->
+      </div>
+
+      <!-- Load More Button -->
+      <div class="md:hidden md:mt-[12.9%] md:ml-[12%] flex justify-center py-[5%]">
+        <button onclick="loadMoreBlogs()" class="w-[30vw] md:w-[9vw] hover:scale-105 duration-300">
+          <img src="assets/images/load more red btn.svg" alt="Load More">
+        </button>
+      </div>
+      <div class="hidden md:block absolute ml-[85%] mt-[2%]">
+        <img class="w-[5vw]" src="assets/images/stars.svg" alt="">
+     </div>
+     <div class="hidden md:block absolute ml-[8%] mt-[75%]">
+        <img class="w-[5vw]" src="assets/images/stars.svg" alt="">
+     </div>
+     <div class="absolute hidden md:block left-0 mt-[-1%]">
+      <img class="w-[10vw] scale-x-[-1]" src="assets/images/flower 2.svg" alt="" />
+    </div>
+    <div class="hidden w-[10vw] md:flex absolute right-[-1%] mt-[-1.5%]">
+      <img src="assets/images/footer leafs.svg" alt="" />
+    </div>
+
+      <script>
+
+      </script>
+
+
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="relative bg-05 bg-opacity-[50%] flex flex-col overflow-hidden w-full pt-[4%] md:pt-[2%]">
+      <div
+        class="hidden md:flex absolute w-full justify-between font-alex font-[400] text-06 text-[3vw] opacity-[10%] mt-[-2.5%]">
+        <p>Beauty & Brawn</p>
+        <p>Beauty & Brawn</p>
+      </div>
+      <div class="hidden w-[10vw] md:flex absolute right-[-2%] mt-[1%]">
+        <img src="assets/images/footer leafs.svg" alt="" />
+      </div>
+      <!-- first Div -->
+      <div class="flex flex-col md:flex-row w-full md:justify-center md:items-center">
+        <div class="flex gap-[2vw] md:gap-[1vw] items-center ml-[56%] md:ml-[11%] pt-[7%] md:pt-[0%]">
+          <p class="font-playfair font-[600] text-01 text-[4.5vw] md:text-[1.3vw]">
+            Follow US :
+          </p>
+          <a href="#"><img class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300" src="assets/images/insta.svg"
+              alt="Instagram" /></a>
+          <a href="#" class="md:ml-[-4%]"><img class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
+              src="assets/images/fb.svg" alt="Facebook" /></a>
+        </div>
+        <div class="flex w-[24.55vw] max-w-[92.06px] ml-[4%] md:ml-[25%] mt-[-14%] md:mt-[0%]">
+          <a href="index.html"><img class="w-full hover:scale-105 duration-300" src="assets/images/Mask group.svg"
+              alt="" /></a>
+        </div>
+        <div class="flex pt-[5%] md:pt-[1%] mx-auto">
+          <input
+            class="rounded-lg bg-05 bg-opacity-[50%] w-[92vw] md:w-[24.22vw] h-[10.67vw] md:h-[2.6vw] border-[1px] border-09 font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] pl-[4%] focus:outline-none focus:ring-2 focus:ring-01 focus:border-01 transition-all duration-300 ease-in-out hover:border-01"
+            type="email" name="email" id="" placeholder="Your Email Address" />
+        </div>
+      </div>
+      <!--Divider  -->
+      <div class="border border-07 w-[92%] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"></div>
+      <!-- Second Div -->
+      <div
+        class="grid grid-cols-2 md:w-[85%] mx-auto md:ml-[10%] md:grid-cols-5 gap-4 md:gap-2 mt-[5%] md:mt-[0.5%] ml-[4%]">
+        <!--Grid 1  -->
+        <div class="md:w-[70%] md:justify-items-center md:ml-[5%]">
+          <div
+            class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[35%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Address</h3>
+            <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+          </div>
+          <p class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]">
+            17539 Chatsworth St Granada Hills, CA 91344
+          </p>
+        </div>
+        <!-- Divider -->
+        <div class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center ml-[20%]"></div>
+        <!--Grid 2  -->
+        <div class="md:w-[150%] w-[95%] md:justify-items-center md:ml-[-30%]">
+          <div
+            class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[50%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Quick Links</h3>
+            <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+          </div>
+          <div
+            class="flex font-outfit font-[400] text-[4vw] md:text-[1vw] md:gap-2 gap-1 flex-wrap md:text-center text-02 mt-[3%]">
+            <a class="hover:scale-105 hover:text-01 duration-300" href="index.html">Home</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="aboutUs.html">About Us</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="services.html">Services</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="gallery.html">Gallery</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="blog.html">Blog</a>
+          </div>
+        </div>
+        <!-- Divider -->
+        <div class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center md:ml-[50%]"></div>
+        <!--Grid 3  -->
+        <div class="md:w-[60%] mx-auto justify-items-center md:ml-[-15%]">
+          <div
+            class="w-full md:ml-[16%] text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Contact</h3>
+            <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+          </div>
+          <p class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]">
+            info@beautyandbrawnaesthetics.com<br />818-626-3507
+          </p>
+        </div>
+      </div>
+      <!--Divider  -->
+      <div class="border border-07 w-[100%] mt-[5%] md:mt-[0.5%] mx-auto"></div>
+      <!-- Third Div -->
+      <div
+        class="flex w-full justify-between px-[4%] md:px-[10.5%] md:py-[0.5%] font-outfit font-[400] text-02 text-[4vw] md:text-[1vw]">
+        <p>&copy 2024 beauty& brawn</p>
+        <a class="hover:text-01 hover:scale-105 duration-300" href="3">
+          <p>Privacy Policy</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="src/script.js"></script>
+<script src="src/blogs.js"></script>
+
+
 </html>
