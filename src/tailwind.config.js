@@ -51,6 +51,7 @@ tailwind.config = {
         "08": "#F8F8F8",
         "09": "#C7C7C7",
         "010": "#5F5F5F",
+        "011" : "#F0C9E0"
       },
       spacing: {},
       width: {},

@@ -104,7 +104,7 @@
     <section>
         <div class="relative flex flex-col w-full overflow-hidden">
             <div
-                class="w-[80vw] mt-[5%] md:pt-[3%] ml-[5%] md:ml-[31%] text-[6vw] md:text-[2.5vw] md:w-[70%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+                class="md:order-2 w-[80vw] mt-[5%] md:pt-[3%] ml-[5%] md:ml-[31%] text-[6vw] md:text-[2.5vw] md:w-[70%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
                 <h3 class="">
                     A Revolutionary Approach to Regaining Your Confidence
                 </h3>
@@ -112,7 +112,8 @@
                 </div>
             </div>
 
-            <div class="flex items-center text-02 text-[4vw] font-outfit font-[600] gap-[3%] ml-[5%] mt-[3%]">
+            <div
+                class="md:order-3 flex items-center text-02 text-[4vw] font-outfit font-[600] gap-[3%] ml-[5%] mt-[3%]">
                 <img class="w-[11vw]" src="assets/images/admin vector.svg" alt="" />
                 <p>By Admin</p>
                 <img class="w-[11vw]" src="assets/images/calender vector.svg" alt="" />
@@ -120,11 +121,12 @@
             </div>
 
             <div
-                class="w-[92vw] h-[65.34vw] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5%] mx-auto mt-[5%]">
-                <img class="w-[92vw] h-[65.34vw] object-cover rounded-xl" src="assets/images/blog-2.jpeg" alt="" />
+                class="md:order-1 w-[92vw] h-[65.34vw] md:w-[50.05vw] md:h-[35.68vw] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5%] md:p-[0.25%] mx-auto md:ml-[12%] mt-[5%]">
+                <img class="w-[92vw] h-[65.34vw] md:w-[50.05vw] md:h-[35.68vw] object-cover rounded-xl"
+                    src="assets/images/blog-2.jpeg" alt="" />
             </div>
 
-            <div class="text-02 font-outfit font-[400] text-[3.6vw] w-[90vw] mx-auto mt-[3%]">
+            <div class=" md:order-4 text-02 font-outfit font-[400] text-[3.6vw] w-[90vw] mx-auto mt-[3%]">
                 <p class="pb-[2%]">
                     In the quest for luscious, thick hair, Platelet-Rich Plasma (PRP)
                     therapy stands out as a beacon of hope for individuals battling hair
@@ -139,7 +141,7 @@
                 </p>
             </div>
 
-            <div class="relative w-[92vw] mt-[5%] mx-auto">
+            <div class="md:order-5 relative w-[92vw] mt-[5%] mx-auto">
                 <div>
                     <img class="w-[92vw] rounded-lg" src="assets/images/gallery/g4.jfif" alt="" />
                 </div>
@@ -148,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="text-02 font-outfit font-[400] text-[3.6vw] w-[90vw] mx-auto mt-[5%]">
+            <div class="md:order-6 text-02 font-outfit font-[400] text-[3.6vw] w-[90vw] mx-auto mt-[5%]">
                 <p>
                     The benefits of PRP for hair restoration are manifold. This non-surgical intervention is not only
                     minimally invasive but also boasts a low risk of side effects, making it an appealing choice for
@@ -176,85 +178,105 @@
         </div>
     </section>
 
-    <section>
-        <div class="w-full md:w-[30%] bg-white shadow-lg p-6 rounded-lg">
+    <section class="">
+        <div class="md:absolute w-full md:w-[30%] bg-white shadow-lg p-6 rounded-lg">
             <!-- Search Bar Section -->
-            <div class="mb-6">
-              <div class="relative flex">
-                <input 
-                  type="text" 
-                  placeholder="Search Your Keword.." 
-                  class="w-full py-3 pl-4 pr-10 text-02 font-outfit font-[500] border border-2 border-02 rounded-lg focus:outline-none focus:ring-2 focus:ring-01 focus:border-01"
-                />
-                <div class="absolute right-0 ">
-                  <img class="rounded-lg w-[16.5vw]" src="assets/images/search icon.svg" alt="">
+            <div class="mb-[4%]">
+                <div class="relative flex">
+                    <input type="text" placeholder="Search Your Keword.."
+                        class="w-[92vw] h-[12.54vw] pl-[4%]  text-02 text-[4.5vw] font-outfit font-[500] border border-2 border-02 rounded-md focus:outline-none focus:ring-2 focus:ring-01 focus:border-01" />
+                    <div class="absolute right-[-1%] ">
+                        <img class="rounded-md w-[16.5vw] h-[12.27vw]" src="assets/images/search icon.svg" alt="">
+                    </div>
                 </div>
-              </div>
             </div>
-          
+
             <!-- Recent Posts Section -->
-            <div class="mb-6 border border-2 border-02 rounded-lg p-[5%]">
-              <h2 class="text-[5.5vw] font-[600] font-outfit mb-4 text-01">Recent Post</h2>
-              <ul class="space-y-4">
-                <li>
-                  <a href="#" class="text-gray-700 hover:text-blue-500">
-                    <p class="font-medium">Understanding Tailwind CSS Utilities</p>
-                    <p class="text-sm text-gray-500">Posted on Dec 28, 2024</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-700 hover:text-blue-500">
-                    <p class="font-medium">How to Build a Responsive Grid</p>
-                    <p class="text-sm text-gray-500">Posted on Dec 20, 2024</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-700 hover:text-blue-500">
-                    <p class="font-medium">Top 5 Tailwind Tips for Beginners</p>
-                    <p class="text-sm text-gray-500">Posted on Dec 15, 2024</p>
-                  </a>
-                </li>
-              </ul>
+            <div class="mb-[4%] border border-2 border-02 rounded-md p-[5%]">
+                <h2 class="text-[5.5vw] font-[600] font-outfit mb-4 text-01">Recent Post</h2>
+                <ul class="">
+                    <li>
+                        <a href="#" class="flex text-gray-700 hover:text-text-01 items-center pb-[4%] border-b border-b-02/30 mt-[5%]">
+                            <img class="rounded-md w-[22.67vw] h-[20.8vw] object-cover"
+                                src="assets/images/about us/about us 2.jpeg" alt="">
+                            <div class="ml-[5%] font-outfit font-[400]">
+                                <p class="text-[4vw]">June 22, 2020</p>
+                                <p class=" text-[4.3vw] text-02">Lorem ipsum dolor sit cing
+                                    elit, sed do.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex text-gray-700 hover:text-text-01 items-center pb-[4%] border-b border-b-02/30 mt-[5%]">
+                            <img class="rounded-md w-[22.67vw] h-[20.8vw] object-cover"
+                                src="assets/images/about us/follow us 6.jpeg" alt="">
+                            <div class="ml-[5%] font-outfit font-[400]">
+                                <p class="text-[4vw]">June 22, 2020</p>
+                                <p class=" text-[4.3vw] text-02">Lorem ipsum dolor sit cing
+                                    elit, sed do.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex text-gray-700 hover:text-01 items-center pb-[4%] border-b border-b-02/30 mt-[5%]">
+                            <img class="rounded-md w-[22.67vw] h-[20.8vw] object-cover"
+                                src="assets/images/gallery/g1.jfif" alt="">
+                            <div class="ml-[5%] font-outfit font-[400]">
+                                <p class="text-[4vw]">June 22, 2020</p>
+                                <p class=" text-[4.3vw] text-02">Lorem ipsum dolor sit cing
+                                    elit, sed do.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex text-gray-700 hover:text-text-01 items-center pb-[4%] border-b border-b-02/30 mt-[5%]">
+                            <img class="rounded-md w-[22.67vw] h-[20.8vw] object-cover"
+                                src="assets/images/bb product.jpeg" alt="">
+                            <div class="ml-[5%] font-outfit font-[400]">
+                                <p class="text-[4vw]">June 22, 2020</p>
+                                <p class=" text-[4.3vw] text-02">Lorem ipsum dolor sit cing
+                                    elit, sed do.</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                </ul>
             </div>
-          
+
             <!-- Popular Tags Section -->
-            <div class="border border-2 border-02 rounded-lg p-[5%]">
+            <div class="border border-2 border-02 rounded-md p-[5%]">
                 <h2 class="text-[5.5vw] font-[600] font-outfit mb-4 text-01">Popular Tags</h2>
-              <div class="flex flex-wrap gap-2">
-                <a 
-                  href="#" 
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
-                  #TailwindCSS
-                </a>
-                <a 
-                  href="#" 
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
-                  #WebDesign
-                </a>
-                <a 
-                  href="#" 
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
-                  #JavaScript
-                </a>
-                <a 
-                  href="#" 
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
-                  #ReactJS
-                </a>
-                <a 
-                  href="#" 
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
-                  #UIUX
-                </a>
-                <a 
-                  href="#" 
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
-                  #Frontend
-                </a>
-              </div>
+                <div class="flex flex-wrap gap-[4%]">
+                    <a href="#"
+                        class="border border-011 border-2 px-[5%] py-[2%] mb-[4%] bg-transparent text-02 font-[500] text-[4vw] rounded-md hover:bg-01 hover:border-01 hover:text-white transition duration-300">
+                        Beauty
+                    </a>
+                    
+                    <a href="#"
+                        class="border border-011 border-2 px-[5%] py-[2%] mb-[4%] bg-transparent text-02 font-[500] text-[4vw] rounded-md hover:bg-01 hover:border-01 hover:text-white transition duration-300">
+                        Organic
+                    </a>
+                    
+                    <a href="#"
+                        class="border border-011 border-2 px-[5%] py-[2%] mb-[4%] bg-transparent text-02 font-[500] text-[4vw] rounded-md hover:bg-01 hover:border-01 hover:text-white transition duration-300">
+                        Antiaging
+                    </a>
+                    
+                    <a href="#"
+                        class="border border-011 border-2 px-[5%] py-[2%] mb-[4%] bg-transparent text-02 font-[500] text-[4vw] rounded-md hover:bg-01 hover:border-01 hover:text-white transition duration-300">
+                        Cosmetic
+                    </a>
+                    
+                    <a href="#"
+                        class="border border-011 border-2 px-[5%] py-[2%] mb-[4%] bg-transparent text-02 font-[500] text-[4vw] rounded-md hover:bg-01 hover:border-01 hover:text-white transition duration-300">
+                        Skin Solution
+                    </a>
+                    
+                    
+                </div>
             </div>
-          </div>
-          
+        </div>
+
     </section>
 
     <footer>
