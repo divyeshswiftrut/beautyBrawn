@@ -1,303 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="src/tailwind.config.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  <body class="overflow-x-hidden md:bg-white">
-    <!-- Navbar -->
-    <header class="">
-      <nav
-        class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto mt-[2vh] md:mt-[0.5vh]"
-      >
-        <!-- Logo -->
-        <div>
-          <a href="index.html">
-            <img
-              class="w-12 md:w-auto cursor-pointer hover:scale-105 duration-300"
-              src="assets/images/Mask group.svg"
-              alt=""
-            />
-          </a>
-        </div>
 
-        <!-- Navigation Links -->
-        <div
-          class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5"
-        >
-          <ul
-            class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full"
-          >
-            <li>
-              <img
-                class="md:hidden ml-[60vw] w-14"
-                src="assets/images/stars.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <a
-                class="menu hover:text-01 duration-300 active"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="aboutUs.html"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="services.html"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="gallery.html"
-                >Gallery</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="blog.html"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a class="menu hover:text-01 duration-300" href="contactUs.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <div
-            class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]"
-          >
-            <div>
-              <p class="w-full overflow-hidden whitespace-nowrap">
-                Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
-              </p>
-            </div>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
 
-        <!-- Button and Mobile Menu Icon -->
-        <div class="flex items-center gap-6">
-          <button>
-            <img
-              class="hidden md:block w-36 hover:scale-105 duration-300"
-              src="assets/images/Group 71.svg"
-              alt=""
-            />
-            <ion-icon
-              name="menu"
-              class="text-3xl text-01 cursor-pointer md:hidden"
-              onclick="mobileMenu(this)"
-            ></ion-icon>
-          </button>
-        </div>
-      </nav>
-    </header>
-
-    <section>
-      <div class="pt-[2%] md:pt-[0.2%] w-full">
-        <div class="flex">
-          <img
-            class="w-[100vw] h-[88vw] object-cover"
-            src="assets/images/about us/about us mobile 1.jpeg"
-            alt=""
-          />
-        </div>
+<body class="overflow-x-hidden md:bg-white">
+  <!-- Navbar -->
+  <header class="">
+    <nav class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto mt-[2vh] md:mt-[0.5vh]">
+      <!-- Logo -->
+      <div>
+        <a href="index.html">
+          <img class="w-12 md:w-auto cursor-pointer hover:scale-105 duration-300" src="assets/images/Mask group.svg"
+            alt="" />
+        </a>
       </div>
-    </section>
 
-    <footer>
+      <!-- Navigation Links -->
       <div
-        class="relative bg-05 bg-opacity-[50%] flex flex-col overflow-hidden w-full pt-[4%] md:pt-[2%]"
-      >
-        <div
-          class="hidden md:flex absolute w-full justify-between font-alex font-[400] text-06 text-[3vw] opacity-[10%] mt-[-2.5%]"
-        >
-          <p>Beauty & Brawn</p>
-          <p>Beauty & Brawn</p>
-        </div>
-        <div class="hidden w-[10vw] md:flex absolute right-[-2%] mt-[1%]">
-          <img src="assets/images/footer leafs.svg" alt="" />
-        </div>
-        <!-- first Div -->
-        <div
-          class="flex flex-col md:flex-row w-full md:justify-center md:items-center"
-        >
-          <div
-            class="flex gap-[2vw] md:gap-[1vw] items-center ml-[56%] md:ml-[11%] pt-[7%] md:pt-[0%]"
-          >
-            <p
-              class="font-playfair font-[600] text-01 text-[4.5vw] md:text-[1.3vw]"
-            >
-              Follow US :
-            </p>
-            <a href="#"
-              ><img
-                class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
-                src="assets/images/insta.svg"
-                alt="Instagram"
-            /></a>
-            <a href="#" class="md:ml-[-4%]"
-              ><img
-                class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
-                src="assets/images/fb.svg"
-                alt="Facebook"
-            /></a>
-          </div>
-          <div
-            class="flex w-[24.55vw] max-w-[92.06px] ml-[4%] md:ml-[25%] mt-[-14%] md:mt-[0%]"
-          >
-            <a href="index.html"
-              ><img
-                class="w-full hover:scale-105 duration-300"
-                src="assets/images/Mask group.svg"
-                alt=""
-            /></a>
-          </div>
-          <div class="flex pt-[5%] md:pt-[1%] mx-auto">
-            <input
-              class="rounded-lg bg-05 bg-opacity-[50%] w-[92vw] md:w-[24.22vw] h-[10.67vw] md:h-[2.6vw] border-[1px] border-09 font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] pl-[4%] focus:outline-none focus:ring-2 focus:ring-01 focus:border-01 transition-all duration-300 ease-in-out hover:border-01"
-              type="email"
-              name="email"
-              id=""
-              placeholder="Your Email Address"
-            />
-          </div>
-        </div>
-        <!--Divider  -->
-        <div
-          class="border border-07 w-[92%] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"
-        ></div>
-        <!-- Second Div -->
-        <div
-          class="grid grid-cols-2 md:w-[85%] mx-auto md:ml-[10%] md:grid-cols-5 gap-4 md:gap-2 mt-[5%] md:mt-[0.5%] ml-[4%]"
-        >
-          <!--Grid 1  -->
-          <div class="md:w-[70%] md:justify-items-center md:ml-[5%]">
-            <div
-              class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[35%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-            >
-              <h3 class="">Address</h3>
-              <div
-                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
-              ></div>
-            </div>
-            <p
-              class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]"
-            >
-              17539 Chatsworth St Granada Hills, CA 91344
+        class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5">
+        <ul
+          class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full">
+          <li>
+            <img class="md:hidden ml-[60vw] w-14" src="assets/images/stars.svg" alt="" />
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300 active" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="aboutUs.html">About Us</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="services.html">Services</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300" href="contactUs.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]">
+          <div>
+            <p class="w-full overflow-hidden whitespace-nowrap">
+              Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
             </p>
           </div>
-          <!-- Divider -->
-          <div
-            class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center ml-[20%]"
-          ></div>
-          <!--Grid 2  -->
-          <div class="md:w-[150%] w-[95%] md:justify-items-center md:ml-[-30%]">
-            <div
-              class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[50%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-            >
-              <h3 class="">Quick Links</h3>
-              <div
-                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
-              ></div>
-            </div>
-            <div
-              class="flex font-outfit font-[400] text-[4vw] md:text-[1vw] md:gap-2 gap-1 flex-wrap md:text-center text-02 mt-[3%]"
-            >
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="index.html"
-                >Home</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="aboutUs.html"
-                >About Us</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="services.html"
-                >Services</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="gallery.html"
-                >Gallery</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="blog.html"
-                >Blog</a
-              >
-            </div>
-          </div>
-          <!-- Divider -->
-          <div
-            class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center md:ml-[50%]"
-          ></div>
-          <!--Grid 3  -->
-          <div class="md:w-[60%] mx-auto justify-items-center md:ml-[-15%]">
-            <div
-              class="w-full md:ml-[16%] text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-            >
-              <h3 class="">Contact</h3>
-              <div
-                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
-              ></div>
-            </div>
-            <p
-              class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]"
-            >
-              info@beautyandbrawnaesthetics.com<br />818-626-3507
-            </p>
-          </div>
-        </div>
-        <!--Divider  -->
-        <div
-          class="border border-07 w-[100%] mt-[5%] md:mt-[0.5%] mx-auto"
-        ></div>
-        <!-- Third Div -->
-        <div
-          class="flex w-full justify-between px-[4%] md:px-[10.5%] md:py-[0.5%] font-outfit font-[400] text-02 text-[4vw] md:text-[1vw]"
-        >
-          <p>&copy 2024 beauty& brawn</p>
-          <a class="hover:text-01 hover:scale-105 duration-300" href="3"
-            ><p>Privacy Policy</p></a
-          >
         </div>
       </div>
-    </footer>
-  </body>
-  <script src="src/script.js"></script>
+
+      <!-- Button and Mobile Menu Icon -->
+      <div class="flex items-center gap-6">
+        <button>
+          <img class="hidden md:block w-36 hover:scale-105 duration-300" src="assets/images/Group 71.svg" alt="" />
+          <ion-icon name="menu" class="text-3xl text-01 cursor-pointer md:hidden" onclick="mobileMenu(this)"></ion-icon>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section>
+    <div class="relative flex w-[100%]">
+      <div class="relative flex w-[100%] overflow-hidden">
+        <img
+          class="flex w-[100vw] h-[88vw] md:w-[100vw] md:h-[33.86vw] object-cover md:translate-x-[10%] md:scale-110 md:object-[0%_22%]"
+          src="assets/images/services details/second section third img.jpeg" alt="" />
+
+        <div class="absolute inset-0 backdrop-blur-[10px] bg-01/50 md:w-[50vw]">
+          <img class="absolute mt-[-11%] w-[15.9vw] hidden md:block" src="assets/images/leaf.svg" alt="" />
+          <img class="w-[19.2vw] md:w-[8.55vw] ml-[41.6vw] md:ml-[29.22vw] mt-[17vw] md:mt-[8vw]"
+            src="assets/images/stars white.svg" alt="" />
+          <div
+            class="ml-[5%] md:ml-[0%] text-[7vw] md:text-[3vw] font-playfair font-[700] text-white flex flex-col md:ml-[25%] mt-[4%] md:mt-[-2%]">
+            <h3>Contact Us</h3>
+            <div
+              class="h-[0.7vw] md:h-[0.2vw] mt-[1%] bg-gradient-to-r from-white to-white/0 w-[28vw] md:w-32 rounded-lg">
+            </div>
+          </div>
+          <p
+            class="font-alex font-[400] text-[12vw] md:text-[7vw] mt-[20%] md:mt-[10%] text-03/15 justify-self-center md:ml-[-4%]">
+            Beauty & Brawn
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section>
+    <div class="relative flex flex-col w-full overflow-hidden">
+      <div class="absolute hidden md:block left-0 mt-[-1%]">
+        <img class="w-[10vw] scale-x-[-1]" src="assets/images/flower 2.svg" alt="" />
+      </div>
+      <div class="hidden w-[10vw] md:flex absolute right-[-1%] mt-[-1.5%]">
+        <img src="assets/images/footer leafs.svg" alt="" />
+      </div>
+
+
+      <div class="relative w-[92vw] flex flex-col bg-05/50 rounded-lg p-[5%] mx-auto mt-[10%]">
+        <div class="flex ">
+          <iframe class="rounded-lg w-[81.34vw] h-[69.87vw]"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62735.88965829414!2d-118.487650701062!3d34.27025132512936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29ae9e3b761df%3A0xc9e6ed251ce63258!2s17539%20Chatsworth%20St%2C%20Granada%20Hills%2C%20CA%2091344%2C%20USA!5e0!3m2!1sen!2sin!4v1735844535647!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="relative flex mt-[5%] flex-col">
+          <div
+            class="w-full  text-[7vw]  md:text-[2.5vw]  md:w-[60%]  md:mt-[2%] mb-[5%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Contact Us</h3>
+            <div class="h-[0.4vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[40%] md:w-[8vw]   ">
+            </div>
+          </div>
+          <div>
+            <form action="">
+              <input
+                class="w-[81.34vw] md:w-[21.99vw] h-[12.54vw] md:h-[3.65vw] pl-[4%] mb-[3%] text-02 text-[4.5vw] md:text-[1.2vw] font-outfit font-[500] border border-1 border-02/20 rounded-lg focus:outline-none focus:ring-1 focus:ring-01 focus:border-01"
+                type="text" name="" id="" placeholder="First Name"><br>
+              <input
+                class="w-[81.34vw] md:w-[21.99vw] h-[12.54vw] md:h-[3.65vw] pl-[4%] mb-[3%] text-02 text-[4.5vw] md:text-[1.2vw] font-outfit font-[500] border border-1 border-02/20 rounded-lg focus:outline-none focus:ring-1 focus:ring-01 focus:border-01"
+                type="text" name="" id="" placeholder="Last Name"><br>
+              <input
+                class="w-[81.34vw] md:w-[21.99vw] h-[12.54vw] md:h-[3.65vw] pl-[4%] mb-[3%] text-02 text-[4.5vw] md:text-[1.2vw] font-outfit font-[500] border border-1 border-02/20 rounded-lg focus:outline-none focus:ring-1 focus:ring-01 focus:border-01"
+                type="email" name="" id="" placeholder="Email"><br>
+              <textarea
+                class="w-[81.34vw] md:w-[21.99vw] h-[31.2vw] md:h-[3.65vw] pl-[4%]      pt-[3%] text-02 text-[4.5vw] md:text-[1.2vw] font-outfit font-[500] border border-1 border-02/20 rounded-lg focus:outline-none focus:ring-1 focus:ring-01 focus:border-01"
+                name="" id="" rows="5" placeholder="Message"></textarea><br>
+              <button class="mt-[5%] md:mt-[0%]"><img class="w-[24.8vw] md:w-[15.9vw]   hover:scale-105 duration-300"
+                  src="assets/images/submit btn.svg" alt=""></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Drop us a line -->
+  <section>
+    <div class="relative flex flex-col w-[92vw] overflow-hidden mx-auto mt-[5%]">
+      <div
+        class="w-full  text-[10vw]  md:text-[2.5vw]  md:w-[60%]  md:mt-[2%] mb-[5%] font-playfair font-[800] text-01 flex flex-col">
+        <h3 class="">Drop us a line</h3>
+        <div class="h-[0.4vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[40%] md:w-[8vw]   ">
+        </div>
+      </div>
+
+      <div>
+        <div class="flex items-start font-outfit text-02 fomt-[400] text-[3.7vw]">
+          <img class="w-[4.9vw]" src="assets/images/leafs vector.svg" alt="">
+          <p class="ml-[1%] w-[84.8vw] ">By providing your phone number via paper/digital intake forms and/or website
+            submissions, you consent to
+            receive calls and text messages regarding appointments, marketing, and other information. No purchase is
+            required. Message and data rates may apply.</p>
+        </div>
+        <div class="flex items-start font-outfit text-02 fomt-[400] text-[3.7vw]">
+          <img class="w-[4.9vw]" src="assets/images/leafs vector.svg" alt="">
+          <p class="ml-[1%] w-[84.8vw] ">Beauty and Brawn Aesthetics will send approximately 4 texts a month (maximum)
+            offering special discounts and text-only deals. You may opt out at any time by replying STOP to the text
+            message.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="relative flex flex-col w-[92vw] bg-gradient-to-r from-01 to-white/0 p-[2px] rounded-lg mx-auto my-[10%]">
+      <div class="rounded-lg bg-white">
+        <div class="relative flex flex-col bg-05/50 rounded-lg p-[5%] font-outfit font-[400] text-02 text-[4.5vw]">
+          <div class="flex flex-col  items-center text-center mt-[5%]">
+            <img class="w-[10.67vw]" src="assets/images/location.svg" alt="">
+            <p class="mt-[4%]">17539 Chatsworth St Granada Hills, CA 91344</p>
+          </div>
+          <div class="border border-07 w-[65.06vw] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"></div>
+          <div class="flex flex-col  items-center text-center mt-[6%]">
+            <img class="w-[10.67vw]" src="assets/images/call.svg" alt="">
+            <p class="mt-[4%]">818-626-3507</p>
+          </div>
+          <div class="border border-07 w-[65.06vw] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"></div>
+          <div class="flex flex-col  items-center text-center mt-[6%]">
+            <img class="w-[10.67vw]" src="assets/images/mail.svg" alt="">
+            <p class="mt-[4%]">info@beautyandbrawnaesthetics.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="relative bg-05 bg-opacity-[50%] flex flex-col overflow-hidden w-full pt-[4%] md:pt-[2%]">
+      <div
+        class="hidden md:flex absolute w-full justify-between font-alex font-[400] text-06 text-[3vw] opacity-[10%] mt-[-2.5%]">
+        <p>Beauty & Brawn</p>
+        <p>Beauty & Brawn</p>
+      </div>
+      <div class="hidden w-[10vw] md:flex absolute right-[-2%] mt-[1%]">
+        <img src="assets/images/footer leafs.svg" alt="" />
+      </div>
+      <!-- first Div -->
+      <div class="flex flex-col md:flex-row w-full md:justify-center md:items-center">
+        <div class="flex gap-[2vw] md:gap-[1vw] items-center ml-[56%] md:ml-[11%] pt-[7%] md:pt-[0%]">
+          <p class="font-playfair font-[600] text-01 text-[4.5vw] md:text-[1.3vw]">
+            Follow US :
+          </p>
+          <a href="#"><img class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300" src="assets/images/insta.svg"
+              alt="Instagram" /></a>
+          <a href="#" class="md:ml-[-4%]"><img class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
+              src="assets/images/fb.svg" alt="Facebook" /></a>
+        </div>
+        <div class="flex w-[24.55vw] max-w-[92.06px] ml-[4%] md:ml-[25%] mt-[-14%] md:mt-[0%]">
+          <a href="index.html"><img class="w-full hover:scale-105 duration-300" src="assets/images/Mask group.svg"
+              alt="" /></a>
+        </div>
+        <div class="flex pt-[5%] md:pt-[1%] mx-auto">
+          <input
+            class="rounded-lg bg-05 bg-opacity-[50%] w-[92vw] md:w-[24.22vw] h-[10.67vw] md:h-[2.6vw] border-[1px] border-09 font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] pl-[4%] focus:outline-none focus:ring-2 focus:ring-01 focus:border-01 transition-all duration-300 ease-in-out hover:border-01"
+            type="email" name="email" id="" placeholder="Your Email Address" />
+        </div>
+      </div>
+      <!--Divider  -->
+      <div class="border border-07 w-[92%] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"></div>
+      <!-- Second Div -->
+      <div
+        class="grid grid-cols-2 md:w-[85%] mx-auto md:ml-[10%] md:grid-cols-5 gap-4 md:gap-2 mt-[5%] md:mt-[0.5%] ml-[4%]">
+        <!--Grid 1  -->
+        <div class="md:w-[70%] md:justify-items-center md:ml-[5%]">
+          <div
+            class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[35%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Address</h3>
+            <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+          </div>
+          <p class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]">
+            17539 Chatsworth St Granada Hills, CA 91344
+          </p>
+        </div>
+        <!-- Divider -->
+        <div class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center ml-[20%]"></div>
+        <!--Grid 2  -->
+        <div class="md:w-[150%] w-[95%] md:justify-items-center md:ml-[-30%]">
+          <div
+            class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[50%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Quick Links</h3>
+            <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+          </div>
+          <div
+            class="flex font-outfit font-[400] text-[4vw] md:text-[1vw] md:gap-2 gap-1 flex-wrap md:text-center text-02 mt-[3%]">
+            <a class="hover:scale-105 hover:text-01 duration-300" href="index.html">Home</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="aboutUs.html">About Us</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="services.html">Services</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="gallery.html">Gallery</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="blog.html">Blog</a>
+          </div>
+        </div>
+        <!-- Divider -->
+        <div class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center md:ml-[50%]"></div>
+        <!--Grid 3  -->
+        <div class="md:w-[60%] mx-auto justify-items-center md:ml-[-15%]">
+          <div
+            class="w-full md:ml-[16%] text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Contact</h3>
+            <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+          </div>
+          <p class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]">
+            info@beautyandbrawnaesthetics.com<br />818-626-3507
+          </p>
+        </div>
+      </div>
+      <!--Divider  -->
+      <div class="border border-07 w-[100%] mt-[5%] md:mt-[0.5%] mx-auto"></div>
+      <!-- Third Div -->
+      <div
+        class="flex w-full justify-between px-[4%] md:px-[10.5%] md:py-[0.5%] font-outfit font-[400] text-02 text-[4vw] md:text-[1vw]">
+        <p>&copy 2024 beauty& brawn</p>
+        <a class="hover:text-01 hover:scale-105 duration-300" href="3">
+          <p>Privacy Policy</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="src/script.js"></script>
+
 </html>
