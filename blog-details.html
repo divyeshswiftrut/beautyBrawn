@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/tailwind.config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="overflow-x-hidden md:bg-white">
+    <!-- Navbar -->
+    <header class="">
+        <nav class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto mt-[2vh] md:mt-[0.5vh]">
+            <!-- Logo -->
+            <div>
+                <a href="index.html">
+                    <img class="w-12 md:w-auto cursor-pointer hover:scale-105 duration-300"
+                        src="assets/images/Mask group.svg" alt="" />
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <div
+                class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5">
+                <ul
+                    class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full">
+                    <li>
+                        <img class="md:hidden ml-[60vw] w-14" src="assets/images/stars.svg" alt="" />
+                    </li>
+                    <li>
+                        <a class="menu hover:text-01 duration-300 active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu hover:text-01 duration-300" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="menu hover:text-01 duration-300" href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a class="menu hover:text-01 duration-300" href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="menu hover:text-01 duration-300" href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a class="menu hover:text-01 duration-300" href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]">
+                    <div>
+                        <p class="w-full overflow-hidden whitespace-nowrap">
+                            Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button and Mobile Menu Icon -->
+            <div class="flex items-center gap-6">
+                <button>
+                    <img class="hidden md:block w-36 hover:scale-105 duration-300" src="assets/images/Group 71.svg"
+                        alt="" />
+                    <ion-icon name="menu" class="text-3xl text-01 cursor-pointer md:hidden"
+                        onclick="mobileMenu(this)"></ion-icon>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section>
+        <div class="relative flex w-[100%]">
+            <div class="relative flex w-[100%] overflow-hidden">
+                <img class="flex w-[100vw] h-[88vw] md:w-[100vw] md:h-[33.86vw] object-cover md:translate-x-[10%] md:scale-110 md:object-[0%_22%]"
+                    src="assets/images/gallery/g2.jfif" alt="" />
+
+                <div class="absolute inset-0 backdrop-blur-[10px] bg-01/50 md:w-[50vw]">
+                    <img class="absolute mt-[-11%] w-[15.9vw] hidden md:block" src="assets/images/leaf.svg" alt="" />
+                    <img class="w-[19.2vw] md:w-[8.55vw] ml-[41.6vw] md:ml-[29.22vw] mt-[17vw] md:mt-[8vw]"
+                        src="assets/images/stars white.svg" alt="" />
+                    <div
+                        class="ml-[5%] md:ml-[0%] text-[7vw] md:text-[3vw] font-playfair font-[700] text-white flex flex-col md:ml-[25%] mt-[4%] md:mt-[-2%]">
+                        <h3>Blog Details</h3>
+                        <div
+                            class="h-[0.7vw] md:h-[0.2vw] mt-[1%] bg-gradient-to-r from-white to-white/0 w-[28vw] md:w-32 rounded-lg">
+                        </div>
+                    </div>
+                    <p
+                        class="font-alex font-[400] text-[12vw] md:text-[7vw] mt-[20%] md:mt-[10%] text-03/15 justify-self-center md:ml-[-4%]">
+                        Beauty & Brawn
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="relative flex flex-col w-full overflow-hidden">
+            <div
+                class="w-[80vw] mt-[5%] md:pt-[3%] ml-[5%] md:ml-[31%] text-[6vw] md:text-[2.5vw] md:w-[70%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+                <h3 class="">
+                    A Revolutionary Approach to Regaining Your Confidence
+                </h3>
+                <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-05 w-[75%] md:w-[20vw] rounded-full">
+                </div>
+            </div>
+
+            <div class="flex items-center text-02 text-[4vw] font-outfit font-[600] gap-[3%] ml-[5%] mt-[3%]">
+                <img class="w-[11vw]" src="assets/images/admin vector.svg" alt="" />
+                <p>By Admin</p>
+                <img class="w-[11vw]" src="assets/images/calender vector.svg" alt="" />
+                <p>08 Apr, 2023</p>
+            </div>
+
+            <div
+                class="w-[92vw] h-[65.34vw] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5%] mx-auto mt-[5%]">
+                <img class="w-[92vw] h-[65.34vw] object-cover rounded-xl" src="assets/images/blog-2.jpeg" alt="" />
+            </div>
+
+            <div class="text-02 font-outfit font-[400] text-[3.6vw] w-[90vw] mx-auto mt-[3%]">
+                <p class="pb-[2%]">
+                    In the quest for luscious, thick hair, Platelet-Rich Plasma (PRP)
+                    therapy stands out as a beacon of hope for individuals battling hair
+                    loss. This innovative procedure harnesses the healing power within
+                    our blood to stimulate hair growth, offering a glimmer of promise to
+                    those who have felt the discouragement of thinning hair.
+                </p>
+                <p>
+                    PRP therapy is a testament to the wonders of modern science,
+                    providing a natural solution that leverages the body’s own
+                    regenerative capabilities to restore hair density. 
+                </p>
+            </div>
+
+            <div class="relative w-[92vw] mt-[5%] mx-auto">
+                <div>
+                    <img class="w-[92vw] rounded-lg" src="assets/images/gallery/g4.jfif" alt="" />
+                </div>
+                <div class="flex absolute rounded-lg inset-0 backdrop-blur-[5px] bg-01/50 justify-center items-center">
+                    <img class="w-[15vw] hover:cursor-pointer hover:scale-105" src="assets/images/playbtn.svg" alt="" />
+                </div>
+            </div>
+
+            <div class="text-02 font-outfit font-[400] text-[3.6vw] w-[90vw] mx-auto mt-[5%]">
+                <p>
+                    The benefits of PRP for hair restoration are manifold. This non-surgical intervention is not only
+                    minimally invasive but also boasts a low risk of side effects, making it an appealing choice for
+                    many. Patients can expect to see a noticeable improvement in hair thickness, volume, and scalp
+                    health. PRP therapy works by concentrating the platelets from your own blood to promote healing and
+                    growth in the scalp, effectively waking dormant hair follicles and encouraging the growth of new
+                    hair. This process not only enhances hair density but also improves the strength and health of
+                    existing hair, leading to an overall more youthful and vibrant appearance. One of the most common
+                    questions surrounding PRP therapy is, “How long does it take to see results?” Patience is key, as
+                    the nature of hair growth requires time. Most patients begin to see visible improvements within
+                    three to six months after their first session, with the full benefits becoming apparent after a
+                    series of treatments. The gradual improvement in hair density and texture over time is a testament
+                    to the lasting impact of PRP therapy, offering a long-term solution to hair loss that gets better
+                    with each passing month. 
+                </p>
+                <p>
+                     As we explore the transformative effects of PRP therapy, the accompanying before and after photo
+                    showcases the remarkable results achievable with this treatment. The visual comparison highlights
+                    the dramatic restoration of hair volume and health, serving as a powerful testament to the
+                    effectiveness of PRP therapy in combating hair loss. Embrace the journey towards a fuller, healthier
+                    head of hair with PRP therapy, and rediscover the confidence that comes from revitalizing your
+                    natural beauty.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-full md:w-[30%] bg-white shadow-lg p-6 rounded-lg">
+            <!-- Search Bar Section -->
+            <div class="mb-6">
+              <div class="relative flex">
+                <input 
+                  type="text" 
+                  placeholder="Search Your Keword.." 
+                  class="w-full py-3 pl-4 pr-10 text-02 font-outfit font-[500] border border-2 border-02 rounded-lg focus:outline-none focus:ring-2 focus:ring-01 focus:border-01"
+                />
+                <div class="absolute right-0 ">
+                  <img class="rounded-lg w-[16.5vw]" src="assets/images/search icon.svg" alt="">
+                </div>
+              </div>
+            </div>
+          
+            <!-- Recent Posts Section -->
+            <div class="mb-6 border border-2 border-02 rounded-lg p-[5%]">
+              <h2 class="text-[5.5vw] font-[600] font-outfit mb-4 text-01">Recent Post</h2>
+              <ul class="space-y-4">
+                <li>
+                  <a href="#" class="text-gray-700 hover:text-blue-500">
+                    <p class="font-medium">Understanding Tailwind CSS Utilities</p>
+                    <p class="text-sm text-gray-500">Posted on Dec 28, 2024</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-700 hover:text-blue-500">
+                    <p class="font-medium">How to Build a Responsive Grid</p>
+                    <p class="text-sm text-gray-500">Posted on Dec 20, 2024</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-700 hover:text-blue-500">
+                    <p class="font-medium">Top 5 Tailwind Tips for Beginners</p>
+                    <p class="text-sm text-gray-500">Posted on Dec 15, 2024</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          
+            <!-- Popular Tags Section -->
+            <div class="border border-2 border-02 rounded-lg p-[5%]">
+                <h2 class="text-[5.5vw] font-[600] font-outfit mb-4 text-01">Popular Tags</h2>
+              <div class="flex flex-wrap gap-2">
+                <a 
+                  href="#" 
+                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
+                  #TailwindCSS
+                </a>
+                <a 
+                  href="#" 
+                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
+                  #WebDesign
+                </a>
+                <a 
+                  href="#" 
+                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
+                  #JavaScript
+                </a>
+                <a 
+                  href="#" 
+                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
+                  #ReactJS
+                </a>
+                <a 
+                  href="#" 
+                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
+                  #UIUX
+                </a>
+                <a 
+                  href="#" 
+                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-blue-500 hover:text-white transition">
+                  #Frontend
+                </a>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+
+    <footer>
+        <div class="relative bg-05 bg-opacity-[50%] flex flex-col overflow-hidden w-full pt-[4%] md:pt-[2%]">
+            <div
+                class="hidden md:flex absolute w-full justify-between font-alex font-[400] text-06 text-[3vw] opacity-[10%] mt-[-2.5%]">
+                <p>Beauty & Brawn</p>
+                <p>Beauty & Brawn</p>
+            </div>
+            <div class="hidden w-[10vw] md:flex absolute right-[-2%] mt-[1%]">
+                <img src="assets/images/footer leafs.svg" alt="" />
+            </div>
+            <!-- first Div -->
+            <div class="flex flex-col md:flex-row w-full md:justify-center md:items-center">
+                <div class="flex gap-[2vw] md:gap-[1vw] items-center ml-[56%] md:ml-[11%] pt-[7%] md:pt-[0%]">
+                    <p class="font-playfair font-[600] text-01 text-[4.5vw] md:text-[1.3vw]">
+                        Follow US :
+                    </p>
+                    <a href="#"><img class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
+                            src="assets/images/insta.svg" alt="Instagram" /></a>
+                    <a href="#" class="md:ml-[-4%]"><img class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
+                            src="assets/images/fb.svg" alt="Facebook" /></a>
+                </div>
+                <div class="flex w-[24.55vw] max-w-[92.06px] ml-[4%] md:ml-[25%] mt-[-14%] md:mt-[0%]">
+                    <a href="index.html"><img class="w-full hover:scale-105 duration-300"
+                            src="assets/images/Mask group.svg" alt="" /></a>
+                </div>
+                <div class="flex pt-[5%] md:pt-[1%] mx-auto">
+                    <input
+                        class="rounded-lg bg-05 bg-opacity-[50%] w-[92vw] md:w-[24.22vw] h-[10.67vw] md:h-[2.6vw] border-[1px] border-09 font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] pl-[4%] focus:outline-none focus:ring-2 focus:ring-01 focus:border-01 transition-all duration-300 ease-in-out hover:border-01"
+                        type="email" name="email" id="" placeholder="Your Email Address" />
+                </div>
+            </div>
+            <!--Divider  -->
+            <div class="border border-07 w-[92%] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"></div>
+            <!-- Second Div -->
+            <div
+                class="grid grid-cols-2 md:w-[85%] mx-auto md:ml-[10%] md:grid-cols-5 gap-4 md:gap-2 mt-[5%] md:mt-[0.5%] ml-[4%]">
+                <!--Grid 1  -->
+                <div class="md:w-[70%] md:justify-items-center md:ml-[5%]">
+                    <div
+                        class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[35%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+                        <h3 class="">Address</h3>
+                        <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+                    </div>
+                    <p class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]">
+                        17539 Chatsworth St Granada Hills, CA 91344
+                    </p>
+                </div>
+                <!-- Divider -->
+                <div class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center ml-[20%]"></div>
+                <!--Grid 2  -->
+                <div class="md:w-[150%] w-[95%] md:justify-items-center md:ml-[-30%]">
+                    <div
+                        class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[50%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+                        <h3 class="">Quick Links</h3>
+                        <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+                    </div>
+                    <div
+                        class="flex font-outfit font-[400] text-[4vw] md:text-[1vw] md:gap-2 gap-1 flex-wrap md:text-center text-02 mt-[3%]">
+                        <a class="hover:scale-105 hover:text-01 duration-300" href="index.html">Home</a>
+                        <p class="text-01">|</p>
+                        <a class="hover:scale-105 hover:text-01 duration-300" href="aboutUs.html">About Us</a>
+                        <p class="text-01">|</p>
+                        <a class="hover:scale-105 hover:text-01 duration-300" href="services.html">Services</a>
+                        <p class="text-01">|</p>
+                        <a class="hover:scale-105 hover:text-01 duration-300" href="gallery.html">Gallery</a>
+                        <p class="text-01">|</p>
+                        <a class="hover:scale-105 hover:text-01 duration-300" href="blog.html">Blog</a>
+                    </div>
+                </div>
+                <!-- Divider -->
+                <div class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center md:ml-[50%]"></div>
+                <!--Grid 3  -->
+                <div class="md:w-[60%] mx-auto justify-items-center md:ml-[-15%]">
+                    <div
+                        class="w-full md:ml-[16%] text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+                        <h3 class="">Contact</h3>
+                        <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+                    </div>
+                    <p class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]">
+                        info@beautyandbrawnaesthetics.com<br />818-626-3507
+                    </p>
+                </div>
+            </div>
+            <!--Divider  -->
+            <div class="border border-07 w-[100%] mt-[5%] md:mt-[0.5%] mx-auto"></div>
+            <!-- Third Div -->
+            <div
+                class="flex w-full justify-between px-[4%] md:px-[10.5%] md:py-[0.5%] font-outfit font-[400] text-02 text-[4vw] md:text-[1vw]">
+                <p>&copy 2024 beauty& brawn</p>
+                <a class="hover:text-01 hover:scale-105 duration-300" href="3">
+                    <p>Privacy Policy</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="src/script.js"></script>
+<script src="src/blogs.js"></script>
+
+</html>
