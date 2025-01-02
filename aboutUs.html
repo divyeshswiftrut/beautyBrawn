@@ -1,964 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="src/tailwind.config.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  <body class="overflow-x-hidden md:bg-white">
-    <!-- Navbar -->
-    <header class="">
-      <nav
-        class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto my-[1vh] md:my-[0.5vh]"
-      >
-        <!-- Logo -->
-        <div>
-          <a href="index.html">
-            <img
-              class="w-12 md:w-[5vw] cursor-pointer hover:scale-105 duration-300"
-              src="assets/images/Mask group.svg"
-              alt=""
-            />
-          </a>
-        </div>
 
-        <!-- Navigation Links -->
-        <div
-          class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5"
-        >
-          <ul
-            class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full"
-          >
-            <li>
-              <img
-                class="md:hidden ml-[60vw] w-14"
-                src="assets/images/stars.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <a
-                class="menu hover:text-01 duration-300 active md:text-[1.1vw] text-[6vw]"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]"
-                href="aboutUs.html"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]"
-                href="services.html"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]"
-                href="gallery.html"
-                >Gallery</a
-              >
-            </li>
-            <li>
-              <a
-                class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]"
-                href="blog.html"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]"
-                href="contactUs.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <div
-            class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]"
-          >
-            <div>
-              <p class="w-full overflow-hidden whitespace-nowrap">
-                Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
-              </p>
-            </div>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
 
-        <!-- Button and Mobile Menu Icon -->
-        <div class="flex items-center gap-6">
-          <button>
-            <img
-              class="hidden md:block w-[10vw] hover:scale-105 duration-300"
-              src="assets/images/Group 71.svg"
-              alt=""
-            />
-            <ion-icon
-              name="menu"
-              class="text-3xl text-01 cursor-pointer md:hidden"
-              onclick="mobileMenu(this)"
-            ></ion-icon>
-          </button>
-        </div>
-      </nav>
-    </header>
-
-    <!-- first Section -->
-    <section>
-      <div class="relative flex w-[100%]">
-        <div class="relative flex w-[100%]">
-          <img
-            class="md:hidden w-[100vw] h-[88vw] object-cover object-center"
-            src="assets/images/about us/about us mobile 1.jpeg"
-            alt=""
-          />
-          <img
-            class="hidden md:block w-[100vw] h-[33.86vw] object-cover"
-            src="assets/images/about us/about us 1.jpeg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 backdrop-blur-[10px] bg-01/50 md:w-[50vw]"
-          >
-            <img
-              class="absolute mt-[-11%] w-[15.9vw] hidden md:block"
-              src="assets/images/leaf.svg"
-              alt=""
-            />
-            <img
-              class="w-[19.2vw] md:w-[8.55vw] ml-[41.6vw] md:ml-[29.22vw] mt-[17vw] md:mt-[8vw]"
-              src="assets/images/stars white.svg"
-              alt=""
-            />
-            <div
-              class="ml-[5%] md:ml-[0%] text-[7vw] md:text-[3vw] font-playfair font-[700] text-white flex flex-col md:ml-[25%] mt-[4%] md:mt-[-2%]"
-            >
-              <h3>About Us</h3>
-              <div
-                class="h-[0.7vw] md:h-[0.2vw] mt-[1%] bg-gradient-to-r from-white to-white/0 w-[28vw] md:w-32 rounded-lg"
-              ></div>
-            </div>
-            <p
-              class="font-alex font-[400] text-[12vw] md:text-[7vw] mt-[20%] md:mt-[10%] text-03/15 justify-self-center md:ml-[-4%]"
-            >
-              Beauty & Brawn
-            </p>
-          </div>
-        </div>
+<body class="overflow-x-hidden md:bg-white">
+  <!-- Navbar -->
+  <header class="">
+    <nav class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto my-[1vh] md:my-[0.5vh]">
+      <!-- Logo -->
+      <div>
+        <a href="index.html">
+          <img class="w-12 md:w-[5vw] cursor-pointer hover:scale-105 duration-300" src="assets/images/Mask group.svg"
+            alt="" />
+        </a>
       </div>
-    </section>
 
-    <!-- Welcome To Beauty & Brawn -->
-    <section>
-      <div class="relative flex bg-white w-full overflow-hidden">
-        <div
-          class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-22%] ml-[-45%] opacity-[8%] whitespace-nowrap"
-        >
-          <p>About Us</p>
-        </div>
-        <div class="absolute hidden md:block right-0">
-          <img class="w-[8.16vw]" src="assets/images/flower 2.svg" alt="" />
-        </div>
-        <div
-          class="flex flex-col bg-gradient-to-r from-05 to-08 ml-[5%] md:ml-[12%] mt-[10%] md:mt-[8%] rounded-2xl pb-[6%] w-full md:w-[68.55vw] md:h-[27.04vw]"
-        >
-          <div
-            class="w-full mt-[5%] md:pt-[3%] ml-[5%] md:ml-[3%] text-[6vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-          >
-            <h3 class="">Welcome To Beauty & Brawn</h3>
-            <div
-              class="h-[0.3vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-05 w-[25%] md:w-[20vw] rounded-full"
-            ></div>
-          </div>
-          <!-- image div -->
-          <div
-            class="md:absolute ml-[5%] md:ml-[51%] w-[92.8vw] md:w-[39.64vw] mt-[5%] md:mt-[2.3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl"
-          >
-            <div class="flex bg-white m-[0.6%] flex-col rounded-xl">
-              <div>
-                <img
-                  class="h-[48vw] md:h-[21.83vw] w-[92.8vw] md:w-[39.64vw] transform scale-x-[-1] object-cover rounded-xl"
-                  src="assets/images/bb product.jpeg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <!-- text -->
-          <div class="ml-[5%] mt-[4%] md:mt-[1.1%] md:ml-[3%]">
-            <p
-              class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[88.54vw] md:w-[44.17vw]"
-            >
-              Meet Jerissa, the heartbeat of our medspa. With over 8 years of
-              nursing experience in the ICU and Emergency Room, as well as 5
-              years as a pilates and lagree fitness instructor, Jerissa has
-              always had a passion for helping people feel their best. With that
-              passion for personalized care she quickly realized aesthetics was
-              an incredible way to help people feel their best, inside and out.
-              Jerissa is dedicated to enhancing your natural beauty, and making
-              sure you have a comfortable, and transformative experience. Trust
-              her with your aesthetic journey, and discover the perfect blend of
-              skill, compassion, and expertise.
-            </p>
-          </div>
-          <div class="ml-[5%] mt-[4%] md:mt-[1%] md:ml-[3%]">
-            <img
-              class="w-[52.54vw] md:w-[14.17vw]"
-              src="assets/images/founder.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Make Your Skin Bright   -->
-    <section>
-      <div class="relative flex bg-white w-full overflow-hidden pb-[2%]">
-        <div
-          class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-22%] ml-[45%] opacity-[8%] whitespace-nowrap"
-        >
-          <p>About Us</p>
-        </div>
-
-        <div
-          class="flex flex-col bg-gradient-to-l from-05 to-08 mr-[5%] md:ml-[18%] mt-[8%] md:mt-[5%] rounded-2xl pb-[6%] w-full md:w-[68.55vw] md:h-[34.53vw]"
-        >
-          <div
-            class="w-full mt-[5%] md:pt-[3%] ml-[5%] md:ml-[31%] text-[6vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-          >
-            <h3 class="">Make Your Skin Bright</h3>
-            <div
-              class="h-[0.3vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-05 w-[25%] md:w-[20vw] rounded-full"
-            ></div>
-          </div>
-          <!-- image div -->
-          <div
-            class="md:absolute ml-[-5%] md:ml-[-22%] w-[92.8vw] md:w-[39.64vw] mt-[5%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl"
-          >
-            <div class="flex bg-white m-[0.5%] flex-col rounded-xl">
-              <div>
-                <img
-                  class="h-[48vw] md:h-[28.49vw] w-[92.8vw] md:w-[39.64vw] transform scale-x-[-1] md:scale-x-[1] object-cover rounded-xl"
-                  src="assets/images/about us/about us 2.jpeg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <!-- text -->
-          <div class="ml-[5%] mt-[4%] md:mt-[1.1%] md:ml-[31%]">
-            <p
-              class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[88.54vw] md:w-[44.17vw] pb-[1%]"
-            >
-              Dr. Catherine Uram is an experienced physician with over 13 years
-              in medicine. She began her career in the Emergency Room and later
-              established a private integrated medicine practice, providing
-              holistic patient care. Her versatile experience includes
-              telemedicine, supervision, and collaboration with nurses.
-            </p>
-            <p
-              class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[88.54vw] md:w-[44.17vw] pb-[1%]"
-            >
-              Driven by her passion for medicine and patient well-being, Dr.
-              Uram expanded into aesthetics and advanced medical treatments.
-              She's trained in cosmetic neurotoxins, dermal fillers, IV
-              nutritional therapies, and more. Dr. Uram is dedicated to patient
-              safety and has completed a Medical Director course for lasers and
-              aesthetics.
-            </p>
-            <p
-              class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[88.54vw] md:w-[44.17vw]"
-            >
-              With a creative touch and a commitment to helping patients look
-              and feel their best, she's a valuable addition to any med spa
-              team. Her holistic approach and extensive experience make her an
-              ideal medical director collaborator.
-            </p>
-          </div>
-          <div class="ml-[5%] mt-[4%] md:mt-[1%] md:ml-[31%]">
-            <img
-              class="w-[52.54vw] md:w-[14.17vw]"
-              src="assets/images/Medical Director.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Discover The Power Of Non -Surgical Contouring Techiques -->
-    <section>
+      <!-- Navigation Links -->
       <div
-        class="relative flex flex-col bg-white w-full overflow-hidden md:overflow-visible pb-[6%] pt-[2%]"
-      >
-        <img
-          class="hidden md:block absolute ml-[15%] mt-[-1%] w-[6vw]"
-          src="assets/images/stars.svg"
-          alt=""
-        />
-
-        <div
-          class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-30%] ml-[-45%] opacity-[8%] whitespace-nowrap"
-        >
-          <p>Surgical</p>
-        </div>
-
-        <div class="hidden md:block absolute mt-[22%] ml-[22.2%] z-10">
-          <img
-            class="w-[12.5vw] rotate-[-45deg] opacity-[60%]"
-            src="assets/images/flower.png"
-            alt=""
-          />
-        </div>
-
-        <div
-          class="w-full mt-[5%] md:pt-[3%] ml-[5%] md:ml-[45%] text-[6vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-        >
-          <h3 class="md:w-[45vw]">
-            Discover The Power Of Non -Surgical Contouring Techiques
-          </h3>
-          <div
-            class="h-[0.3vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-05 w-[25%] md:w-[20vw] rounded-full"
-          ></div>
-        </div>
-        <!-- Image Div -->
-        <div class="md:absolute z-20 flex flex-row md:w-full md:mt-[3%]">
-          <div
-            class="h-[66.14vw] md:h-[21.62vw] ml-[4.5%] md:ml-[12%] w-[47.74vw] md:w-[15.58vw] mt-[10%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center"
-          >
-            <img
-              class="h-[66.14vw] md:h-[21.62vw] w-[47.74vw] md:w-[15.58vw] transform object-cover rounded-xl object-[80%]"
-              src="assets/images/about us/about us 3.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="ml-[3%] md:ml-[1%]">
-            <div
-              class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] mt-[5%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center mb-[8%]"
-            >
-              <img
-                class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] transform object-cover rounded-xl"
-                src="assets/images/bb product.jpeg"
-                alt=""
-              />
-            </div>
-            <div
-              class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] mt-[5%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center"
-            >
-              <img
-                class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] transform object-cover rounded-xl"
-                src="assets/images/about us/about 4.jpeg"
-                alt=""
-              />
-            </div>
+        class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5">
+        <ul
+          class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full">
+          <li>
+            <img class="md:hidden ml-[60vw] w-14" src="assets/images/stars.svg" alt="" />
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300 active md:text-[1.1vw] text-[6vw]" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="aboutUs.html">About Us</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="services.html">Services</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="contactUs.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]">
+          <div>
+            <p class="w-full overflow-hidden whitespace-nowrap">
+              Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
+            </p>
           </div>
         </div>
-        <div class="ml-[5%] mt-[5%] md:ml-[45%] md:mt-[1%]">
+      </div>
+
+      <!-- Button and Mobile Menu Icon -->
+      <div class="flex items-center gap-6">
+        <button>
+          <img class="hidden md:block w-[10vw] hover:scale-105 duration-300" src="assets/images/Group 71.svg" alt="" />
+          <ion-icon name="menu" class="text-3xl text-01 cursor-pointer md:hidden" onclick="mobileMenu(this)"></ion-icon>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- first Section -->
+  <section>
+    <div class="relative flex w-[100%]">
+      <div class="relative flex w-[100%]">
+        <img class="md:hidden w-[100vw] h-[88vw] object-cover object-center"
+          src="assets/images/about us/about us mobile 1.jpeg" alt="" />
+        <img class="hidden md:block w-[100vw] h-[33.86vw] object-cover" src="assets/images/about us/about us 1.jpeg"
+          alt="" />
+        <div class="absolute inset-0 backdrop-blur-[10px] bg-01/50 md:w-[50vw]">
+          <img class="absolute mt-[-11%] w-[15.9vw] hidden md:block" src="assets/images/leaf.svg" alt="" />
+          <img class="w-[19.2vw] md:w-[8.55vw] ml-[41.6vw] md:ml-[29.22vw] mt-[17vw] md:mt-[8vw]"
+            src="assets/images/stars white.svg" alt="" />
+          <div
+            class="ml-[5%] md:ml-[0%] text-[7vw] md:text-[3vw] font-playfair font-[700] text-white flex flex-col md:ml-[25%] mt-[4%] md:mt-[-2%]">
+            <h3>About Us</h3>
+            <div
+              class="h-[0.7vw] md:h-[0.2vw] mt-[1%] bg-gradient-to-r from-white to-white/0 w-[28vw] md:w-32 rounded-lg">
+            </div>
+          </div>
           <p
-            class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[95vw] md:w-[44.17vw]"
-          >
+            class="font-alex font-[400] text-[12vw] md:text-[7vw] mt-[20%] md:mt-[10%] text-03/15 justify-self-center md:ml-[-4%]">
+            Beauty & Brawn
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome To Beauty & Brawn -->
+  <section>
+    <div class="relative flex bg-white w-full overflow-hidden">
+      <div
+        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-22%] ml-[-45%] opacity-[8%] whitespace-nowrap">
+        <p>About Us</p>
+      </div>
+      <div class="absolute hidden md:block right-0">
+        <img class="w-[8.16vw]" src="assets/images/flower 2.svg" alt="" />
+      </div>
+      <div
+        class="flex flex-col bg-gradient-to-r from-05 to-08 ml-[5%] md:ml-[12%] mt-[10%] md:mt-[8%] rounded-2xl pb-[6%] w-full md:w-[68.55vw] md:h-[27.04vw]">
+        <div
+          class="w-full mt-[5%] md:pt-[3%] ml-[5%] md:ml-[3%] text-[6vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+          <h3 class="">Welcome To Beauty & Brawn</h3>
+          <div class="h-[0.3vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-05 w-[25%] md:w-[20vw] rounded-full"></div>
+        </div>
+        <!-- image div -->
+        <div
+          class="md:absolute ml-[5%] md:ml-[51%] w-[92.8vw] md:w-[39.64vw] mt-[5%] md:mt-[2.3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl">
+          <div class="flex bg-white m-[0.6%] flex-col rounded-xl">
+            <div>
+              <img
+                class="h-[48vw] md:h-[21.83vw] w-[92.8vw] md:w-[39.64vw] transform scale-x-[-1] object-cover rounded-xl"
+                src="assets/images/bb product.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- text -->
+        <div class="ml-[5%] mt-[4%] md:mt-[1.1%] md:ml-[3%]">
+          <p class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[88.54vw] md:w-[44.17vw]">
+            Meet Jerissa, the heartbeat of our medspa. With over 8 years of
+            nursing experience in the ICU and Emergency Room, as well as 5
+            years as a pilates and lagree fitness instructor, Jerissa has
+            always had a passion for helping people feel their best. With that
+            passion for personalized care she quickly realized aesthetics was
+            an incredible way to help people feel their best, inside and out.
+            Jerissa is dedicated to enhancing your natural beauty, and making
+            sure you have a comfortable, and transformative experience. Trust
+            her with your aesthetic journey, and discover the perfect blend of
+            skill, compassion, and expertise.
+          </p>
+        </div>
+        <div class="ml-[5%] mt-[4%] md:mt-[1%] md:ml-[3%]">
+          <img class="w-[52.54vw] md:w-[14.17vw]" src="assets/images/founder.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Make Your Skin Bright   -->
+  <section>
+    <div class="relative flex bg-white w-full overflow-hidden pb-[2%]">
+      <div
+        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-22%] ml-[45%] opacity-[8%] whitespace-nowrap">
+        <p>About Us</p>
+      </div>
+
+      <div
+        class="flex flex-col bg-gradient-to-l from-05 to-08 mr-[5%] md:ml-[18%] mt-[8%] md:mt-[5%] rounded-2xl pb-[6%] w-full md:w-[68.55vw] md:h-[34.53vw]">
+        <div
+          class="w-full mt-[5%] md:pt-[3%] ml-[5%] md:ml-[31%] text-[6vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+          <h3 class="">Make Your Skin Bright</h3>
+          <div class="h-[0.3vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-05 w-[25%] md:w-[20vw] rounded-full"></div>
+        </div>
+        <!-- image div -->
+        <div
+          class="md:absolute ml-[-5%] md:ml-[-22%] w-[92.8vw] md:w-[39.64vw] mt-[5%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl">
+          <div class="flex bg-white m-[0.5%] flex-col rounded-xl">
+            <div>
+              <img
+                class="h-[48vw] md:h-[28.49vw] w-[92.8vw] md:w-[39.64vw] transform scale-x-[-1] md:scale-x-[1] object-cover rounded-xl"
+                src="assets/images/about us/about us 2.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- text -->
+        <div class="ml-[5%] mt-[4%] md:mt-[1.1%] md:ml-[31%]">
+          <p class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[88.54vw] md:w-[44.17vw] pb-[1%]">
+            Dr. Catherine Uram is an experienced physician with over 13 years
+            in medicine. She began her career in the Emergency Room and later
+            established a private integrated medicine practice, providing
+            holistic patient care. Her versatile experience includes
+            telemedicine, supervision, and collaboration with nurses.
+          </p>
+          <p class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[88.54vw] md:w-[44.17vw] pb-[1%]">
+            Driven by her passion for medicine and patient well-being, Dr.
+            Uram expanded into aesthetics and advanced medical treatments.
+            She's trained in cosmetic neurotoxins, dermal fillers, IV
+            nutritional therapies, and more. Dr. Uram is dedicated to patient
+            safety and has completed a Medical Director course for lasers and
+            aesthetics.
+          </p>
+          <p class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[88.54vw] md:w-[44.17vw]">
+            With a creative touch and a commitment to helping patients look
+            and feel their best, she's a valuable addition to any med spa
+            team. Her holistic approach and extensive experience make her an
+            ideal medical director collaborator.
+          </p>
+        </div>
+        <div class="ml-[5%] mt-[4%] md:mt-[1%] md:ml-[31%]">
+          <img class="w-[52.54vw] md:w-[14.17vw]" src="assets/images/Medical Director.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discover The Power Of Non -Surgical Contouring Techiques -->
+  <section>
+    <div class="relative flex flex-col bg-white w-full overflow-hidden md:overflow-visible pb-[6%] pt-[2%]">
+      <img class="hidden md:block absolute ml-[15%] mt-[-1%] w-[6vw]" src="assets/images/stars.svg" alt="" />
+
+      <div
+        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-30%] ml-[-45%] opacity-[8%] whitespace-nowrap">
+        <p>Surgical</p>
+      </div>
+
+      <div class="hidden md:block absolute mt-[22%] ml-[22.2%] z-10">
+        <img class="w-[12.5vw] rotate-[-45deg] opacity-[60%]" src="assets/images/flower.png" alt="" />
+      </div>
+
+      <div
+        class="w-full mt-[5%] md:pt-[3%] ml-[5%] md:ml-[45%] text-[6vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+        <h3 class="md:w-[45vw]">
+          Discover The Power Of Non -Surgical Contouring Techiques
+        </h3>
+        <div class="h-[0.3vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-05 w-[25%] md:w-[20vw] rounded-full"></div>
+      </div>
+      <!-- Image Div -->
+      <div class="md:absolute z-20 flex flex-row md:w-full md:mt-[3%]">
+        <div
+          class="h-[66.14vw] md:h-[21.62vw] ml-[4.5%] md:ml-[12%] w-[47.74vw] md:w-[15.58vw] mt-[10%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center">
+          <img
+            class="h-[66.14vw] md:h-[21.62vw] w-[47.74vw] md:w-[15.58vw] transform object-cover rounded-xl object-[80%]"
+            src="assets/images/about us/about us 3.jpeg" alt="" />
+        </div>
+        <div class="ml-[3%] md:ml-[1%]">
+          <div
+            class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] mt-[5%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center mb-[8%]">
+            <img class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] transform object-cover rounded-xl"
+              src="assets/images/bb product.jpeg" alt="" />
+          </div>
+          <div
+            class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] mt-[5%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center">
+            <img class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] transform object-cover rounded-xl"
+              src="assets/images/about us/about 4.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="ml-[5%] mt-[5%] md:ml-[45%] md:mt-[1%]">
+        <p class="font-outfit text-02 font-[400] text-[3.7vw] md:text-[1.05vw] w-[95vw] md:w-[44.17vw]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          posuere urna sed scelerisque pulvinar. Nunc interdum scelerisque
+          malesuada. Maecenas orci ante, sollicitudin vel molestie vitae,
+          rhoncus eget mi. Nam id dictum nisi, non molestie odio.
+        </p>
+      </div>
+      <div class="ml-[5%] mt-[2%] md:ml-[45%] md:mt-[1%]">
+        <p class="text-04 font-[500] font-outfit flex gap-[1.5%] text-[4vw] md:text-[1.2vw] mb-[1%]">
+          <img class="md:w-[1.5vw] w-[5.5vw]" src="assets/images/leafs vector.svg" alt="" />
+          Cheek Fillers
+        </p>
+        <p class="text-04 font-[500] font-outfit flex gap-[1.5%] text-[4vw] md:text-[1.2vw] mb-[1%]">
+          <img class="md:w-[1.5vw] w-[5.5vw]" src="assets/images/leafs vector.svg" alt="" />
+          Jawline Contouring
+        </p>
+        <p class="text-04 font-[500] font-outfit flex gap-[1.5%] text-[4vw] md:text-[1.2vw] mb-[1%]">
+          <img class="md:w-[1.5vw] w-[5.5vw]" src="assets/images/leafs vector.svg" alt="" />
+          Lip Augmentation
+        </p>
+        <p class="text-04 font-[500] font-outfit flex gap-[1.5%] text-[4vw] md:text-[1.2vw] mb-[1%]">
+          <img class="md:w-[1.5vw] w-[5.5vw]" src="assets/images/leafs vector.svg" alt="" />
+          Non-Surgical Rhinoplasty
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Follow On Instagram -->
+  <section>
+    <div class="relative w-full overflow-hidden md:overflow-visible">
+      <div
+        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-35%] ml-[45%] opacity-[8%] whitespace-nowrap">
+        <p>Instagram</p>
+      </div>
+
+      <div
+        class="w-full ml-[5%] md:ml-[37.5%] text-[7vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+        <h3 class="">Follow On Instagram</h3>
+        <div class="h-[0.4vw] md:h-[0.15vw] md:ml-[10%] bg-gradient-to-r from-01 to-03 w-[40%] md:w-[8vw]"></div>
+      </div>
+
+      <!-- Slider Container -->
+
+      <div class="relative md:w-full md:pl-[7.5%] overflow-hidden">
+        <!-- Carousel Wrapper -->
+        <div id="instaSlider"
+          class="flex pb-[1%] md:justify-center transition-transform duration-300 py-[5%] md:py-[3%]">
+          <div
+            class="bg-white ml-[5%] md:ml-[-8%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300">
+            <img src="assets/images/about us/follow us 1.jpeg" alt="slide"
+              class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover" />
+          </div>
+          <div
+            class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300">
+            <img src="assets/images/about us/about 4.jpeg" alt="slide"
+              class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover" />
+          </div>
+          <div
+            class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300">
+            <img src="assets/images/about us/follow us 3.jpeg" alt="slide"
+              class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover" />
+          </div>
+          <div
+            class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300">
+            <img src="assets/images/about us/follow us 4.jpeg" alt="slide"
+              class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] transform scale-x-[-1] rounded-xl object-cover" />
+          </div>
+          <div
+            class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300">
+            <img src="assets/images/about us/follow us 5.jpeg" alt="slide"
+              class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover" />
+          </div>
+          <div
+            class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300">
+            <img src="assets/images/about us/follow us 6.jpeg" alt="slide"
+              class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination Dots -->
+      <div id="paginationDots" class="flex justify-center mt-8 space-x-2 md:hidden pb-[2]">
+        <button class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"></button>
+        <button class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"></button>
+        <button class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"></button>
+        <button class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"></button>
+        <button class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"></button>
+        <button class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Latest Blogs -->
+  <section>
+    <div class="relative flex flex-col md:flex-row overflow-hidden w-full pt-[7%] md:pt-[5%] md:pb-[2%]">
+      <div
+        class="absolute w-full static hidden md:block text-[6vw] font-alex rotate-[-90deg] text-06 my-[-31%] ml-[-45%] opacity-[8%] whitespace-nowrap">
+        <p>Latest Blog</p>
+      </div>
+      <div class="flex flex-col ml-[5%] md:ml-[12%] w-full">
+        <div
+          class="w-full text-[7vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+          <h3 class="">Our Latest Blog</h3>
+          <div class="h-[0.4vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[40%] md:w-[8vw]"></div>
+        </div>
+        <div
+          class="flex flex-col text-left font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] w-[90%] md:w-[32.09vw] pt-[3%] md:pt-[2.5%]">
+          <p class="pb-[2%]">
+            Nullam tristique blandit pharetra maecenas molestie justoven nec
+            viverra element. Suspendisse at pharetra quam. Fuscenal nunca sit
+            amet pharetra mag nibh sit amet rhoncus amet nae nam ac ni ut
+            sapien facilisis porttitor lacinia dolor.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            dignissim convallis magna et interdum. Pellentesque
+          </p>
+        </div>
+      </div>
+      <!-- Blogs Div -->
+      <div
+        class="w-full overflow-x-scroll md:overflow-x-hidden scrollbar-hide md:overflow-y-hidden flex md:ml-[-20%] md:h-[25vw]">
+        <!-- Individual Blog Item -->
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[63.7vw] md:w-[18.90vw] ml-[5%] pt-[3%] cursor-pointer hover:scale-105 duration-300">
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[48.7vw] md:ml-[15vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;20<br />Apr
+              </p>
+              <img class="ml-[46vw] md:ml-[14.5vw] w-[12vw] md:w-[3vw]" src="assets/images/bg-date.svg" alt="" />
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[37vw] md:h-[11.25vw] w-[63.7vw] md:w-[18.90vw]"
+                src="assets/images/blog-1.jpeg" alt="" />
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[4.2vw] md:text-[1.3vw]">
+                  A Revolutionary Approach to Regaining Your Confidence
+                </p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">
+                    Read More
+                  </p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more blog items below -->
+        <div
+          class="flex-shrink-0 flex flex-col relative w-[63.7vw] md:w-[18.90vw] ml-[5%] pt-[3%] mr-[5%] cursor-pointer hover:scale-105 duration-300">
+          <div class="relative w-full">
+            <div class="absolute">
+              <p
+                class="absolute ml-[48.7vw] md:ml-[15vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex">
+                &nbsp;25<br />Mar
+              </p>
+              <img class="ml-[46vw] md:ml-[14.5vw] w-[12vw] md:w-[3vw]" src="assets/images/bg-date.svg" alt="" />
+            </div>
+            <div class="rounded-t-lg">
+              <img class="rounded-t-lg object-cover h-[37vw] md:h-[11.25vw] w-[63.7vw] md:w-[18.90vw]"
+                src="assets/images/blog-2.jpeg" alt="" />
+              <div class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg">
+                <p class="text-left font-playfair font-[600] text-01 text-[4.2vw] md:text-[1.3vw]">
+                  A Revolutionary Approach to Regaining Your Confidence
+                </p>
+                <div class="flex flex-row gap-2">
+                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">
+                    Read More
+                  </p>
+                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md:absolute md:mt-[12.9%] md:ml-[12%] flex ml-[5%] py-[5%]">
+        <button>
+          <img class="w-[30vw] md:w-[9vw] hover:scale-105 duration-300" src="assets/images/View More BTn.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- See Our Work -->
+  <section>
+    <div
+      class="relative bg-gradient-to-l from-05 to-08 flex flex-col pt-[5%] pb-[7%] md:pb-[4%] mb-[5%] overflow-hidden w-full">
+      <div class="absolute mt-[-5%] opacity-[30%] hidden w-[12vw] md:block">
+        <img src="assets/images/14.png.svg" alt="" />
+      </div>
+      <div
+        class="absolute w-full static hidden md:block text-[7vw] font-alex text-06 rotate-[-90deg] ml-[45%] mt-[-25%] opacity-[8%] whitespace-nowrap">
+        <p>Our Works</p>
+      </div>
+      <div
+        class="w-full items-center md:ml-[16%] text-[7vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+        <h3 class="">See Our Works</h3>
+        <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[40%] md:w-[8vw] ml-[3%] md:ml-[-14.5%]">
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:ml-[10%]">
+        <div class="flex w-full mt-[5%] md:mt-[-6%] justify-center">
+          <div
+            class="relative w-[92.54vw] md:w-[21.78vw] h-[104vw] md:h-[28.38vw] rounded-lg about-group overflow-hidden">
+            <!-- After Image -->
+            <img src="assets/images/see our work.svg" alt="After" class="absolute inset-0 w-full h-full object-cover" />
+
+            <!-- Before Image -->
+            <div id="about-before-container" class="bg-02 opacity-[30%] absolute inset-0 overflow-hidden"></div>
+
+            <!-- Slider Bar -->
+            <div id="about-slider-bar" class="absolute h-full w-full cursor-pointer" style="left: 50%">
+              <img class="ml-[-5%] md:ml-[-6%] h-full object-cover" src="assets/images/slider.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col font-outfit font-[400] text-[3.5vw] md:text-[1vw] p-[4%] md:pr-[15%] md:mt-[-3%] text-center md:text-left text-02 items-center justify-center md:justify-items-start md:items-start md:ml-[-2.5%]">
+          <p>
+            Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam,quis nostrud exrcit ation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat auteirure dolor in reprehen derit in volup
+            tate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <br />
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             posuere urna sed scelerisque pulvinar. Nunc interdum scelerisque
             malesuada. Maecenas orci ante, sollicitudin vel molestie vitae,
-            rhoncus eget mi. Nam id dictum nisi, non molestie odio.
+            rhoncus eget mi. Nam id dictum nisi, non molestie odio. Donec
+            suscipit nisi id leo fermentum, sed porta turpis efficitur.
+            Suspendisse id sapien pellentesque, ultrices justo in, laoreet
+            sapien.
           </p>
-        </div>
-        <div class="ml-[5%] mt-[2%] md:ml-[45%] md:mt-[1%]">
-          <p
-            class="text-04 font-[500] font-outfit flex gap-[1.5%] text-[4vw] md:text-[1.2vw] mb-[1%]"
-          >
-            <img
-              class="md:w-[1.5vw] w-[5.5vw]"
-              src="assets/images/leafs vector.svg"
-              alt=""
-            />
-            Cheek Fillers
+          <br />
+          <p>
+            Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam,quis nostrud exrcit ation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat auteirure dolor.
           </p>
-          <p
-            class="text-04 font-[500] font-outfit flex gap-[1.5%] text-[4vw] md:text-[1.2vw] mb-[1%]"
-          >
-            <img
-              class="md:w-[1.5vw] w-[5.5vw]"
-              src="assets/images/leafs vector.svg"
-              alt=""
-            />
-            Jawline Contouring
-          </p>
-          <p
-            class="text-04 font-[500] font-outfit flex gap-[1.5%] text-[4vw] md:text-[1.2vw] mb-[1%]"
-          >
-            <img
-              class="md:w-[1.5vw] w-[5.5vw]"
-              src="assets/images/leafs vector.svg"
-              alt=""
-            />
-            Lip Augmentation
-          </p>
-          <p
-            class="text-04 font-[500] font-outfit flex gap-[1.5%] text-[4vw] md:text-[1.2vw] mb-[1%]"
-          >
-            <img
-              class="md:w-[1.5vw] w-[5.5vw]"
-              src="assets/images/leafs vector.svg"
-              alt=""
-            />
-            Non-Surgical Rhinoplasty
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Follow On Instagram -->
-    <section>
-      <div class="relative w-full overflow-hidden md:overflow-visible">
-        <div
-          class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-35%] ml-[45%] opacity-[8%] whitespace-nowrap"
-        >
-          <p>Instagram</p>
-        </div>
-
-        <div
-          class="w-full ml-[5%] md:ml-[37.5%] text-[7vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-        >
-          <h3 class="">Follow On Instagram</h3>
-          <div
-            class="h-[0.4vw] md:h-[0.15vw] md:ml-[10%] bg-gradient-to-r from-01 to-03 w-[40%] md:w-[8vw]"
-          ></div>
-        </div>
-
-        <!-- Slider Container -->
-
-        <div class="relative md:w-full md:pl-[7.5%] overflow-hidden">
-          <!-- Carousel Wrapper -->
-          <div
-            id="instaSlider"
-            class="flex pb-[1%] md:justify-center transition-transform duration-300 py-[5%] md:py-[3%]"
-          >
-            <div
-              class="bg-white ml-[5%] md:ml-[-8%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300"
-            >
-              <img
-                src="assets/images/about us/follow us 1.jpeg"
-                alt="slide"
-                class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover"
-              />
-            </div>
-            <div
-              class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300"
-            >
-              <img
-                src="assets/images/about us/about 4.jpeg"
-                alt="slide"
-                class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover"
-              />
-            </div>
-            <div
-              class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300"
-            >
-              <img
-                src="assets/images/about us/follow us 3.jpeg"
-                alt="slide"
-                class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover"
-              />
-            </div>
-            <div
-              class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300"
-            >
-              <img
-                src="assets/images/about us/follow us 4.jpeg"
-                alt="slide"
-                class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] transform scale-x-[-1] rounded-xl object-cover"
-              />
-            </div>
-            <div
-              class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300"
-            >
-              <img
-                src="assets/images/about us/follow us 5.jpeg"
-                alt="slide"
-                class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover"
-              />
-            </div>
-            <div
-              class="bg-white ml-[5%] md:ml-[1.5%] w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl shadow-md flex-shrink-0 hover:scale-105 duration-300"
-            >
-              <img
-                src="assets/images/about us/follow us 6.jpeg"
-                alt="slide"
-                class="w-[35.47vw] h-[35.47vw] md:w-[11.62vw] md:h-[11.62vw] rounded-xl object-cover"
-              />
-            </div>
+          <div class="flex pt-[5%] md:pt-[3%] gap-4">
+            <button class="about-left-btn">
+              <img class="hover:scale-105 duration-300" src="assets/images/left btn.svg" alt="Left" />
+            </button>
+            <button class="about-right-btn">
+              <img class="hover:scale-105 duration-300" src="assets/images/right btn.svg" alt="Right" />
+            </button>
           </div>
         </div>
-
-        <!-- Pagination Dots -->
-        <div
-          id="paginationDots"
-          class="flex justify-center mt-8 space-x-2 md:hidden pb-[2]"
-        >
-          <button
-            class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"
-          ></button>
-          <button
-            class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"
-          ></button>
-          <button
-            class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"
-          ></button>
-          <button
-            class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"
-          ></button>
-          <button
-            class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"
-          ></button>
-          <button
-            class="w-3 h-3 bg-05 rounded-full ring-1 ring-01 transition-all"
-          ></button>
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Our Latest Blogs -->
-    <section>
+  <footer>
+    <div class="relative bg-05 bg-opacity-[50%] flex flex-col overflow-hidden w-full pt-[4%] md:pt-[2%]">
       <div
-        class="relative flex flex-col md:flex-row overflow-hidden w-full pt-[7%] md:pt-[5%] md:pb-[2%]"
-      >
-        <div
-          class="absolute w-full static hidden md:block text-[6vw] font-alex rotate-[-90deg] text-06 my-[-31%] ml-[-45%] opacity-[8%] whitespace-nowrap"
-        >
-          <p>Latest Blog</p>
+        class="hidden md:flex absolute w-full justify-between font-alex font-[400] text-06 text-[3vw] opacity-[10%] mt-[-2.5%]">
+        <p>Beauty & Brawn</p>
+        <p>Beauty & Brawn</p>
+      </div>
+      <div class="hidden w-[10vw] md:flex absolute right-[-2%] mt-[1%]">
+        <img src="assets/images/footer leafs.svg" alt="" />
+      </div>
+      <!-- first Div -->
+      <div class="flex flex-col md:flex-row w-full md:justify-center md:items-center">
+        <div class="flex gap-[2vw] md:gap-[1vw] items-center ml-[56%] md:ml-[11%] pt-[7%] md:pt-[0%]">
+          <p class="font-playfair font-[600] text-01 text-[4.5vw] md:text-[1.3vw]">
+            Follow US :
+          </p>
+          <a href="#"><img class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300" src="assets/images/insta.svg"
+              alt="Instagram" /></a>
+          <a href="#" class="md:ml-[-4%]"><img class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
+              src="assets/images/fb.svg" alt="Facebook" /></a>
         </div>
-        <div class="flex flex-col ml-[5%] md:ml-[12%] w-full">
-          <div
-            class="w-full text-[7vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-          >
-            <h3 class="">Our Latest Blog</h3>
-            <div
-              class="h-[0.4vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[40%] md:w-[8vw]"
-            ></div>
-          </div>
-          <div
-            class="flex flex-col text-left font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] w-[90%] md:w-[32.09vw] pt-[3%] md:pt-[2.5%]"
-          >
-            <p class="pb-[2%]">
-              Nullam tristique blandit pharetra maecenas molestie justoven nec
-              viverra element. Suspendisse at pharetra quam. Fuscenal nunca sit
-              amet pharetra mag nibh sit amet rhoncus amet nae nam ac ni ut
-              sapien facilisis porttitor lacinia dolor.
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              dignissim convallis magna et interdum. Pellentesque
-            </p>
-          </div>
+        <div class="flex w-[24.55vw] max-w-[92.06px] ml-[4%] md:ml-[25%] mt-[-14%] md:mt-[0%]">
+          <a href="index.html"><img class="w-full hover:scale-105 duration-300" src="assets/images/Mask group.svg"
+              alt="" /></a>
         </div>
-        <!-- Blogs Div -->
-        <div
-          class="w-full overflow-x-scroll md:overflow-x-hidden scrollbar-hide md:overflow-y-hidden flex md:ml-[-20%] md:h-[25vw]"
-        >
-          <!-- Individual Blog Item -->
-          <div
-            class="flex-shrink-0 flex flex-col relative w-[63.7vw] md:w-[18.90vw] ml-[5%] pt-[3%] cursor-pointer hover:scale-105 duration-300"
-          >
-            <div class="relative w-full">
-              <div class="absolute">
-                <p
-                  class="absolute ml-[48.7vw] md:ml-[15vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex"
-                >
-                  &nbsp;20<br />Apr
-                </p>
-                <img
-                  class="ml-[46vw] md:ml-[14.5vw] w-[12vw] md:w-[3vw]"
-                  src="assets/images/bg-date.svg"
-                  alt=""
-                />
-              </div>
-              <div class="rounded-t-lg">
-                <img
-                  class="rounded-t-lg object-cover h-[37vw] md:h-[11.25vw] w-[63.7vw] md:w-[18.90vw]"
-                  src="assets/images/blog-1.jpeg"
-                  alt=""
-                />
-                <div
-                  class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg"
-                >
-                  <p
-                    class="text-left font-playfair font-[600] text-01 text-[4.2vw] md:text-[1.3vw]"
-                  >
-                    A Revolutionary Approach to Regaining Your Confidence
-                  </p>
-                  <div class="flex flex-row gap-2">
-                    <p
-                      class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]"
-                    >
-                      Read More
-                    </p>
-                    <img
-                      class="w-[3.5vw] md:w-[1vw]"
-                      src="assets/images/arrows.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Add more blog items below -->
-          <div
-            class="flex-shrink-0 flex flex-col relative w-[63.7vw] md:w-[18.90vw] ml-[5%] pt-[3%] mr-[5%] cursor-pointer hover:scale-105 duration-300"
-          >
-            <div class="relative w-full">
-              <div class="absolute">
-                <p
-                  class="absolute ml-[48.7vw] md:ml-[15vw] pt-[2%] md:pt-[1%] font-playfair text-01 font-[600] text-[4vw] md:text-[1.1vw] items-center justify-center flex"
-                >
-                  &nbsp;25<br />Mar
-                </p>
-                <img
-                  class="ml-[46vw] md:ml-[14.5vw] w-[12vw] md:w-[3vw]"
-                  src="assets/images/bg-date.svg"
-                  alt=""
-                />
-              </div>
-              <div class="rounded-t-lg">
-                <img
-                  class="rounded-t-lg object-cover h-[37vw] md:h-[11.25vw] w-[63.7vw] md:w-[18.90vw]"
-                  src="assets/images/blog-2.jpeg"
-                  alt=""
-                />
-                <div
-                  class="mt-[-1%] p-[3%] bg-white border-x-01 border-b-01 border-2 rounded-b-lg"
-                >
-                  <p
-                    class="text-left font-playfair font-[600] text-01 text-[4.2vw] md:text-[1.3vw]"
-                  >
-                    A Revolutionary Approach to Regaining Your Confidence
-                  </p>
-                  <div class="flex flex-row gap-2">
-                    <p
-                      class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]"
-                    >
-                      Read More
-                    </p>
-                    <img
-                      class="w-[3.5vw] md:w-[1vw]"
-                      src="assets/images/arrows.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="md:absolute md:mt-[12.9%] md:ml-[12%] flex ml-[5%] py-[5%]">
-          <button>
-            <img
-              class="w-[30vw] md:w-[9vw] hover:scale-105 duration-300"
-              src="assets/images/View More BTn.svg"
-              alt=""
-            />
-          </button>
+        <div class="flex pt-[5%] md:pt-[1%] mx-auto">
+          <input
+            class="rounded-lg bg-transparent w-[92vw] md:w-[24.22vw] h-[10.67vw] md:h-[2.6vw] border-[1px] border-09 font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] pl-[4%] focus:outline-none focus:ring-2 focus:ring-01 focus:border-01 transition-all duration-300 ease-in-out hover:border-01"
+            type="email" name="email" id="" placeholder="Your Email Address" />
         </div>
       </div>
-    </section>
-
-    <!-- See Our Work -->
-    <section>
+      <!--Divider  -->
+      <div class="border border-07 w-[92%] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"></div>
+      <!-- Second Div -->
       <div
-        class="relative bg-gradient-to-l from-05 to-08 flex flex-col pt-[5%] pb-[7%] md:pb-[4%] mb-[5%] overflow-hidden w-full"
-      >
-        <div class="absolute mt-[-5%] opacity-[30%] hidden w-[12vw] md:block">
-          <img src="assets/images/14.png.svg" alt="" />
-        </div>
-        <div
-          class="absolute w-full static hidden md:block text-[7vw] font-alex text-06 rotate-[-90deg] ml-[45%] mt-[-25%] opacity-[8%] whitespace-nowrap"
-        >
-          <p>Our Works</p>
-        </div>
-        <div
-          class="w-full items-center md:ml-[16%] text-[7vw] md:text-[2.5vw] md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-        >
-          <h3 class="">See Our Works</h3>
+        class="grid grid-cols-2 md:w-[85%] mx-auto md:ml-[10%] md:grid-cols-5 gap-4 md:gap-2 mt-[5%] md:mt-[0.5%] ml-[4%]">
+        <!--Grid 1  -->
+        <div class="md:w-[70%] md:justify-items-center md:ml-[5%]">
           <div
-            class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[40%] md:w-[8vw] ml-[3%] md:ml-[-14.5%]"
-          ></div>
+            class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[35%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Address</h3>
+            <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+          </div>
+          <p class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]">
+            17539 Chatsworth St Granada Hills, CA 91344
+          </p>
         </div>
-        <div class="flex flex-col md:flex-row md:ml-[10%]">
-          <div class="flex w-full mt-[5%] md:mt-[-6%] justify-center">
-            <div
-              class="relative w-[92.54vw] md:w-[21.78vw] h-[104vw] md:h-[28.38vw] rounded-lg about-group overflow-hidden"
-            >
-              <!-- After Image -->
-              <img
-                src="assets/images/see our work.svg"
-                alt="After"
-                class="absolute inset-0 w-full h-full object-cover"
-              />
-
-              <!-- Before Image -->
-              <div
-                id="about-before-container"
-                class="bg-02 opacity-[30%] absolute inset-0 overflow-hidden"
-              ></div>
-
-              <!-- Slider Bar -->
-              <div
-                id="about-slider-bar"
-                class="absolute h-full w-full cursor-pointer"
-                style="left: 50%"
-              >
-                <img
-                  class="ml-[-5%] md:ml-[-6%] h-full object-cover"
-                  src="assets/images/slider.svg"
-                  alt=""
-                />
-              </div>
-            </div>
+        <!-- Divider -->
+        <div class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center ml-[20%]"></div>
+        <!--Grid 2  -->
+        <div class="md:w-[150%] w-[95%] md:justify-items-center md:ml-[-30%]">
+          <div
+            class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[50%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Quick Links</h3>
+            <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
           </div>
           <div
-            class="flex flex-col font-outfit font-[400] text-[3.5vw] md:text-[1vw] p-[4%] md:pr-[15%] md:mt-[-3%] text-center md:text-left text-02 items-center justify-center md:justify-items-start md:items-start md:ml-[-2.5%]"
-          >
-            <p>
-              Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam,quis nostrud exrcit ation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat auteirure dolor in reprehen derit in volup
-              tate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              posuere urna sed scelerisque pulvinar. Nunc interdum scelerisque
-              malesuada. Maecenas orci ante, sollicitudin vel molestie vitae,
-              rhoncus eget mi. Nam id dictum nisi, non molestie odio. Donec
-              suscipit nisi id leo fermentum, sed porta turpis efficitur.
-              Suspendisse id sapien pellentesque, ultrices justo in, laoreet
-              sapien.
-            </p>
-            <br />
-            <p>
-              Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam,quis nostrud exrcit ation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat auteirure dolor.
-            </p>
-            <div class="flex pt-[5%] md:pt-[3%] gap-4">
-              <button class="about-left-btn">
-                <img
-                  class="hover:scale-105 duration-300"
-                  src="assets/images/left btn.svg"
-                  alt="Left"
-                />
-              </button>
-              <button class="about-right-btn">
-                <img
-                  class="hover:scale-105 duration-300"
-                  src="assets/images/right btn.svg"
-                  alt="Right"
-                />
-              </button>
-            </div>
+            class="flex font-outfit font-[400] text-[4vw] md:text-[1vw] md:gap-2 gap-1 flex-wrap md:text-center text-02 mt-[3%]">
+            <a class="hover:scale-105 hover:text-01 duration-300" href="index.html">Home</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="aboutUs.html">About Us</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="services.html">Services</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="gallery.html">Gallery</a>
+            <p class="text-01">|</p>
+            <a class="hover:scale-105 hover:text-01 duration-300" href="blog.html">Blog</a>
           </div>
+        </div>
+        <!-- Divider -->
+        <div class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center md:ml-[50%]"></div>
+        <!--Grid 3  -->
+        <div class="md:w-[60%] mx-auto justify-items-center md:ml-[-15%]">
+          <div
+            class="w-full md:ml-[16%] text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col">
+            <h3 class="">Contact</h3>
+            <div class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"></div>
+          </div>
+          <p class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]">
+            info@beautyandbrawnaesthetics.com<br />818-626-3507
+          </p>
         </div>
       </div>
-    </section>
-
-    <footer>
+      <!--Divider  -->
+      <div class="border border-07 w-[100%] mt-[5%] md:mt-[0.5%] mx-auto"></div>
+      <!-- Third Div -->
       <div
-        class="relative bg-05 bg-opacity-[50%] flex flex-col overflow-hidden w-full pt-[4%] md:pt-[2%]"
-      >
-        <div
-          class="hidden md:flex absolute w-full justify-between font-alex font-[400] text-06 text-[3vw] opacity-[10%] mt-[-2.5%]"
-        >
-          <p>Beauty & Brawn</p>
-          <p>Beauty & Brawn</p>
-        </div>
-        <div class="hidden w-[10vw] md:flex absolute right-[-2%] mt-[1%]">
-          <img src="assets/images/footer leafs.svg" alt="" />
-        </div>
-        <!-- first Div -->
-        <div
-          class="flex flex-col md:flex-row w-full md:justify-center md:items-center"
-        >
-          <div
-            class="flex gap-[2vw] md:gap-[1vw] items-center ml-[56%] md:ml-[11%] pt-[7%] md:pt-[0%]"
-          >
-            <p
-              class="font-playfair font-[600] text-01 text-[4.5vw] md:text-[1.3vw]"
-            >
-              Follow US :
-            </p>
-            <a href="#"
-              ><img
-                class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
-                src="assets/images/insta.svg"
-                alt="Instagram"
-            /></a>
-            <a href="#" class="md:ml-[-4%]"
-              ><img
-                class="w-[6.67vw] md:w-[1.9vw] hover:scale-105 duration-300"
-                src="assets/images/fb.svg"
-                alt="Facebook"
-            /></a>
-          </div>
-          <div
-            class="flex w-[24.55vw] max-w-[92.06px] ml-[4%] md:ml-[25%] mt-[-14%] md:mt-[0%]"
-          >
-            <a href="index.html"
-              ><img
-                class="w-full hover:scale-105 duration-300"
-                src="assets/images/Mask group.svg"
-                alt=""
-            /></a>
-          </div>
-          <div class="flex pt-[5%] md:pt-[1%] mx-auto">
-            <input
-              class="rounded-lg bg-transparent w-[92vw] md:w-[24.22vw] h-[10.67vw] md:h-[2.6vw] border-[1px] border-09 font-outfit font-[400] text-02 text-[3.5vw] md:text-[1vw] pl-[4%] focus:outline-none focus:ring-2 focus:ring-01 focus:border-01 transition-all duration-300 ease-in-out hover:border-01"
-              type="email"
-              name="email"
-              id=""
-              placeholder="Your Email Address"
-            />
-          </div>
-        </div>
-        <!--Divider  -->
-        <div
-          class="border border-07 w-[92%] md:w-[78%] mt-[5%] md:mt-[1.5%] mx-auto"
-        ></div>
-        <!-- Second Div -->
-        <div
-          class="grid grid-cols-2 md:w-[85%] mx-auto md:ml-[10%] md:grid-cols-5 gap-4 md:gap-2 mt-[5%] md:mt-[0.5%] ml-[4%]"
-        >
-          <!--Grid 1  -->
-          <div class="md:w-[70%] md:justify-items-center md:ml-[5%]">
-            <div
-              class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[35%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-            >
-              <h3 class="">Address</h3>
-              <div
-                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
-              ></div>
-            </div>
-            <p
-              class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]"
-            >
-              17539 Chatsworth St Granada Hills, CA 91344
-            </p>
-          </div>
-          <!-- Divider -->
-          <div
-            class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center ml-[20%]"
-          ></div>
-          <!--Grid 2  -->
-          <div class="md:w-[150%] w-[95%] md:justify-items-center md:ml-[-30%]">
-            <div
-              class="w-full text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[50%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-            >
-              <h3 class="">Quick Links</h3>
-              <div
-                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
-              ></div>
-            </div>
-            <div
-              class="flex font-outfit font-[400] text-[4vw] md:text-[1vw] md:gap-2 gap-1 flex-wrap md:text-center text-02 mt-[3%]"
-            >
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="index.html"
-                >Home</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="aboutUs.html"
-                >About Us</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="services.html"
-                >Services</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="gallery.html"
-                >Gallery</a
-              >
-              <p class="text-01">|</p>
-              <a
-                class="hover:scale-105 hover:text-01 duration-300"
-                href="blog.html"
-                >Blog</a
-              >
-            </div>
-          </div>
-          <!-- Divider -->
-          <div
-            class="hidden md:block border border-07 w-[0.5%] h-[80%] self-center md:ml-[50%]"
-          ></div>
-          <!--Grid 3  -->
-          <div class="md:w-[60%] mx-auto justify-items-center md:ml-[-15%]">
-            <div
-              class="w-full md:ml-[16%] text-[4.5vw] md:text-[1.3vw] md:justify-center md:items-center md:w-[60%] md:mt-[2%] font-playfair font-[800] text-01 flex flex-col"
-            >
-              <h3 class="">Contact</h3>
-              <div
-                class="h-[0.5vw] md:h-[0.15vw] bg-gradient-to-r from-01 to-03 w-[10vw] md:w-[3vw]"
-              ></div>
-            </div>
-            <p
-              class="font-outfit font-[400] text-[4vw] md:text-[1vw] md:text-center text-02 pt-[5%]"
-            >
-              info@beautyandbrawnaesthetics.com<br />818-626-3507
-            </p>
-          </div>
-        </div>
-        <!--Divider  -->
-        <div
-          class="border border-07 w-[100%] mt-[5%] md:mt-[0.5%] mx-auto"
-        ></div>
-        <!-- Third Div -->
-        <div
-          class="flex w-full justify-between px-[4%] md:px-[10.5%] md:py-[0.5%] font-outfit font-[400] text-02 text-[4vw] md:text-[1vw]"
-        >
-          <p>&copy 2024 beauty& brawn</p>
-          <a class="hover:text-01 hover:scale-105 duration-300" href="3"
-            ><p>Privacy Policy</p></a
-          >
-        </div>
+        class="flex w-full justify-between px-[4%] md:px-[10.5%] md:py-[0.5%] font-outfit font-[400] text-02 text-[4vw] md:text-[1vw]">
+        <p>&copy 2024 beauty& brawn</p>
+        <a class="hover:text-01 hover:scale-105 duration-300" href="3">
+          <p>Privacy Policy</p>
+        </a>
       </div>
-    </footer>
-  </body>
-  <script src="src/script.js"></script>
-  <script src="src/aboutUs.js"></script>
+    </div>
+  </footer>
+</body>
+<script src="src/script.js"></script>
+<script src="src/aboutUs.js"></script>
+
 </html>
