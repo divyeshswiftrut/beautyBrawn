@@ -9,8 +9,13 @@ tailwind.config = {
         "fade-in-up": "fadeInUp 1s ease-in-out forwards",
         "slide-in-left": "slideInLeft 1s ease-in-out forwards",
         "slide-in-right": "slideInRight 1s ease-in-out forwards",
+        marquee: "marquee 15s linear infinite",
       },
       keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
@@ -51,7 +56,7 @@ tailwind.config = {
         "08": "#F8F8F8",
         "09": "#C7C7C7",
         "010": "#5F5F5F",
-        "011" : "#F0C9E0"
+        "011": "#F0C9E0",
       },
       spacing: {},
       width: {},

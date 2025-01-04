@@ -16,56 +16,43 @@
 
 <body class="overflow-x-hidden md:bg-white">
   <!-- Navbar -->
-  <header class="">
-    <nav class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto my-[1vh] md:my-[0.5vh]">
+  <header>
+    <nav
+      class="flex justify-between items-center w-[95%] md:w-[75%] h-[55px] md:h-[5vw] mx-auto mt-[1vh] md:mt-[0.5vh]">
       <!-- Logo -->
-      <div>
+      <div class="logo z-50">
         <a href="index.html">
-          <img class="w-12 md:w-[5vw] cursor-pointer hover:scale-105 duration-300" src="assets/images/Mask group.svg"
-            alt="" />
+          <img class="w-[10vw] md:w-[5vw] cursor-pointer hover:scale-105 duration-300"
+            src="assets/images/Mask group.svg" alt="Logo" />
         </a>
       </div>
 
       <!-- Navigation Links -->
       <div
-        class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5">
+        class="nav-links z-40 fixed top-0 left-0 w-full bg-05 md:bg-white md:min-h-fit min-h-[95%] md:w-auto flex items-center md:px-0 px-5 transition-transform transform -translate-y-full md:translate-y-0 md:static z-50">
         <ul
           class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full">
           <li>
             <img class="md:hidden ml-[60vw] w-14" src="assets/images/stars.svg" alt="" />
           </li>
-          <li>
-            <a class="menu hover:text-01 duration-300 active md:text-[1.1vw] text-[6vw]" href="index.html">Home</a>
+          <li><a class="menu hover:text-01 duration-300 active md:text-[1.1vw] text-[6vw]" href="index.html">Home</a>
           </li>
-          <li>
-            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="aboutUs.html">About Us</a>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="aboutUs.html">About Us</a>
           </li>
-          <li>
-            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="services.html">Services</a>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="services.html">Services</a>
           </li>
-          <li>
-            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="gallery.html">Gallery</a>
-          </li>
-          <li>
-            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="blog.html">Blog</a>
-          </li>
-          <li>
-            <a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="contactUs.html">Contact Us</a>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="gallery.html">Gallery</a></li>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="blog.html">Blog</a></li>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="contactUs.html">Contact Us</a>
           </li>
         </ul>
-        <div class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]">
-          <div>
-            <p class="w-full overflow-hidden whitespace-nowrap">
-              Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
-            </p>
-          </div>
-        </div>
       </div>
 
       <!-- Button and Mobile Menu Icon -->
       <div class="flex items-center gap-6">
         <button>
-          <img class="hidden md:block w-[10vw] hover:scale-105 duration-300" src="assets/images/Group 71.svg" alt="" />
+          <a href="book-now.html"><img class="hidden md:block w-[10vw] hover:scale-105 duration-300"
+              src="assets/images/Group 71.svg" alt="Button" /></a>
           <ion-icon name="menu" class="text-3xl text-01 cursor-pointer md:hidden" onclick="mobileMenu(this)"></ion-icon>
         </button>
       </div>
@@ -74,7 +61,7 @@
 
   <!-- first Section -->
   <section>
-    <div class="relative flex w-[100%]">
+    <div class="relative flex w-[100%] animate-fade-in">
       <div class="relative flex w-[100%]">
         <img class="md:hidden w-[100vw] h-[88vw] object-cover object-center"
           src="assets/images/about us/about us mobile 1.jpeg" alt="" />
@@ -104,10 +91,10 @@
   <section>
     <div class="relative flex bg-white w-full overflow-hidden">
       <div
-        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-22%] ml-[-45%] opacity-[8%] whitespace-nowrap">
+        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-22%] ml-[-45%] opacity-[8%] whitespace-nowrap transition-opacity duration-700 hover:opacity-100">
         <p>About Us</p>
       </div>
-      <div class="absolute hidden md:block right-0">
+      <div class="absolute hidden md:block right-0 hover:scale-110 duration-500">
         <img class="w-[8.16vw]" src="assets/images/flower 2.svg" alt="" />
       </div>
       <div
@@ -123,7 +110,7 @@
           <div class="flex bg-white m-[0.6%] flex-col rounded-xl">
             <div>
               <img
-                class="h-[48vw] md:h-[21.83vw] w-[92.8vw] md:w-[39.64vw] transform scale-x-[-1] object-cover rounded-xl"
+                class="h-[48vw] md:h-[21.83vw] w-[92.8vw] md:w-[39.64vw] transform scale-x-[-1] object-cover rounded-xl "
                 src="assets/images/bb product.jpeg" alt="" />
             </div>
           </div>
@@ -144,7 +131,7 @@
           </p>
         </div>
         <div class="ml-[5%] mt-[4%] md:mt-[1%] md:ml-[3%]">
-          <img class="w-[52.54vw] md:w-[14.17vw]" src="assets/images/founder.svg" alt="" />
+          <img class="w-[52.54vw] md:w-[14.17vw] hover:scale-110 duration-500" src="assets/images/founder.svg" alt="" />
         </div>
       </div>
     </div>
@@ -154,7 +141,7 @@
   <section>
     <div class="relative flex bg-white w-full overflow-hidden pb-[2%]">
       <div
-        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-22%] ml-[45%] opacity-[8%] whitespace-nowrap">
+        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-22%] ml-[45%] opacity-[8%] whitespace-nowrap transition-opacity duration-700 hover:opacity-100">
         <p>About Us</p>
       </div>
 
@@ -201,7 +188,7 @@
           </p>
         </div>
         <div class="ml-[5%] mt-[4%] md:mt-[1%] md:ml-[31%]">
-          <img class="w-[52.54vw] md:w-[14.17vw]" src="assets/images/Medical Director.svg" alt="" />
+          <img class="w-[52.54vw] md:w-[14.17vw] hover:scale-110 duration-500" src="assets/images/Medical Director.svg" alt="" />
         </div>
       </div>
     </div>
@@ -210,14 +197,14 @@
   <!-- Discover The Power Of Non -Surgical Contouring Techiques -->
   <section>
     <div class="relative flex flex-col bg-white w-full overflow-hidden md:overflow-visible pb-[6%] pt-[2%]">
-      <img class="hidden md:block absolute ml-[15%] mt-[-1%] w-[6vw]" src="assets/images/stars.svg" alt="" />
+      <img class="hidden md:block absolute ml-[15%] mt-[-1%] w-[6vw] hover:rotate-12 duration-500" src="assets/images/stars.svg" alt="" />
 
       <div
-        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-30%] ml-[-45%] opacity-[8%] whitespace-nowrap">
+        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-30%] ml-[-45%] opacity-[8%] whitespace-nowrap transition-opacity duration-700 hover:opacity-100">
         <p>Surgical</p>
       </div>
 
-      <div class="hidden md:block absolute mt-[22%] ml-[22.2%] z-10">
+      <div class="hidden md:block absolute mt-[22%] ml-[22.2%] z-10 hover:scale-105 duration-500">
         <img class="w-[12.5vw] rotate-[-45deg] opacity-[60%]" src="assets/images/flower.png" alt="" />
       </div>
 
@@ -231,20 +218,20 @@
       <!-- Image Div -->
       <div class="md:absolute z-20 flex flex-row md:w-full md:mt-[3%]">
         <div
-          class="h-[66.14vw] md:h-[21.62vw] ml-[4.5%] md:ml-[12%] w-[47.74vw] md:w-[15.58vw] mt-[10%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center">
+          class="h-[66.14vw] md:h-[21.62vw] ml-[4.5%] md:ml-[12%] w-[47.74vw] md:w-[15.58vw] mt-[10%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center ">
           <img
-            class="h-[66.14vw] md:h-[21.62vw] w-[47.74vw] md:w-[15.58vw] transform object-cover rounded-xl object-[80%]"
+            class="h-[66.14vw] md:h-[21.62vw] w-[47.74vw] md:w-[15.58vw] transform object-cover rounded-xl object-[80%] hover:scale-105 duration-500"
             src="assets/images/about us/about us 3.jpeg" alt="" />
         </div>
         <div class="ml-[3%] md:ml-[1%]">
           <div
             class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] mt-[5%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center mb-[8%]">
-            <img class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] transform object-cover rounded-xl"
+            <img class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] transform object-cover rounded-xl hover:scale-105 duration-500"
               src="assets/images/bb product.jpeg" alt="" />
           </div>
           <div
             class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] mt-[5%] md:mt-[3%] bg-white bg-gradient-to-b from-01 to-white rounded-xl p-[0.5vw] md:p-[0.2vw] justify-center">
-            <img class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] transform object-cover rounded-xl"
+            <img class="h-[37.87vw] md:h-[12.40vw] w-[40.8vw] md:w-[13.34vw] transform object-cover rounded-xl hover:scale-105 duration-500"
               src="assets/images/about us/about 4.jpeg" alt="" />
           </div>
         </div>
@@ -282,7 +269,7 @@
   <section>
     <div class="relative w-full overflow-hidden md:overflow-visible">
       <div
-        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-35%] ml-[45%] opacity-[8%] whitespace-nowrap">
+        class="absolute w-full static hidden md:block text-[7vw] font-alex rotate-[-90deg] text-06 my-[-35%] ml-[45%] opacity-[8%] whitespace-nowrap transition-opacity duration-700 hover:opacity-100">
         <p>Instagram</p>
       </div>
 
@@ -347,7 +334,7 @@
   <section>
     <div class="relative flex flex-col md:flex-row overflow-hidden w-full pt-[7%] md:pt-[5%] md:pb-[2%]">
       <div
-        class="absolute w-full static hidden md:block text-[6vw] font-alex rotate-[-90deg] text-06 my-[-31%] ml-[-45%] opacity-[8%] whitespace-nowrap">
+        class="absolute w-full static hidden md:block text-[6vw] font-alex rotate-[-90deg] text-06 my-[-31%] ml-[-45%] opacity-[8%] whitespace-nowrap transition-opacity duration-700 hover:opacity-100">
         <p>Latest Blog</p>
       </div>
       <div class="flex flex-col ml-[5%] md:ml-[12%] w-full">
@@ -392,12 +379,14 @@
                 <p class="text-left font-playfair font-[600] text-01 text-[4.2vw] md:text-[1.3vw]">
                   A Revolutionary Approach to Regaining Your Confidence
                 </p>
-                <div class="flex flex-row gap-2">
-                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">
-                    Read More
-                  </p>
-                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="" />
-                </div>
+                <a href="blog.html">
+                  <div class="flex flex-row gap-2">
+                    <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">
+                      Read More
+                    </p>
+                    <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="" />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -421,21 +410,24 @@
                 <p class="text-left font-playfair font-[600] text-01 text-[4.2vw] md:text-[1.3vw]">
                   A Revolutionary Approach to Regaining Your Confidence
                 </p>
-                <div class="flex flex-row gap-2">
-                  <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">
-                    Read More
-                  </p>
-                  <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="" />
-                </div>
+                <a href="blog.html">
+                  <div class="flex flex-row gap-2">
+                    <p class="py-[2%] text-left font-manrope font-[700] text-01 text-[3.7vw] md:text-[1vw]">
+                      Read More
+                    </p>
+                    <img class="w-[3.5vw] md:w-[1vw]" src="assets/images/arrows.svg" alt="" />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="md:absolute md:mt-[12.9%] md:ml-[12%] flex ml-[5%] py-[5%]">
-        <button>
-          <img class="w-[30vw] md:w-[9vw] hover:scale-105 duration-300" src="assets/images/View More BTn.svg" alt="" />
-        </button>
+        <a href="blog.html"><button>
+            <img class="w-[30vw] md:w-[9vw] hover:scale-105 duration-300" src="assets/images/View More BTn.svg"
+              alt="" />
+          </button></a>
       </div>
     </div>
   </section>
@@ -444,11 +436,11 @@
   <section>
     <div
       class="relative bg-gradient-to-l from-05 to-08 flex flex-col pt-[5%] pb-[7%] md:pb-[4%] mb-[5%] overflow-hidden w-full">
-      <div class="absolute mt-[-5%] opacity-[30%] hidden w-[12vw] md:block">
+      <div class="absolute mt-[-5%] opacity-[30%] hidden w-[12vw] md:block hover:scale-105 duration-500">
         <img src="assets/images/14.png.svg" alt="" />
       </div>
       <div
-        class="absolute w-full static hidden md:block text-[7vw] font-alex text-06 rotate-[-90deg] ml-[45%] mt-[-25%] opacity-[8%] whitespace-nowrap">
+        class="absolute w-full static hidden md:block text-[7vw] font-alex text-06 rotate-[-90deg] ml-[45%] mt-[-25%] opacity-[8%] whitespace-nowrap transition-opacity duration-700 hover:opacity-100">
         <p>Our Works</p>
       </div>
       <div

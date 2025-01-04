@@ -1,16 +1,10 @@
+// Function to handle active link styling based on the current URL
 function menu() {
-  // Get the current URL path
   const currentPath = window.location.href;
-  console.log(currentPath);
-
-  // Select all menu links
   const menu = document.querySelectorAll(".menu");
-  console.log(menu);
 
-  // Loop through links and add 'text-01' class to the active link
   menu.forEach((link) => {
-    if (link.href == currentPath) {
-      console.log(link.href);
+    if (link.href === currentPath) {
       link.classList.add("text-01", "font-bold");
     }
   });
@@ -20,11 +14,19 @@ menu();
 
 const navLinks = document.querySelector(".nav-links");
 
+// Toggle the mobile menu visibility
 function mobileMenu(e) {
-  e.name = e.name === "menu" ? "close" : "menu";
-  navLinks.classList.toggle("top-[9%]");
+  e.name = e.name === "menu" ? "close" : "menu"; // Change icon when clicked
+  
+  // Toggle the menu visibility and slide it in/out
+  navLinks.classList.toggle("top-[102.8%]"); // Slide menu down (when open)
+  navLinks.classList.toggle("top-[-100%]"); // Slide menu up (when closed)
+
+  // Toggle background overlay and prevent body scrolling
   document.body.classList.toggle("bg-05");
+  document.body.classList.toggle("overflow-hidden");
 }
+
 
 // JavaScript for Carousel Functionality
 const slider = document.getElementById("testimonialSlider");

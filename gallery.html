@@ -16,56 +16,34 @@
 
 <body class="overflow-x-hidden md:bg-white">
   <!-- Navbar -->
-  <header class="">
-    <nav class="flex justify-between items-center w-[95%] md:w-[75%] mx-auto mt-[2vh] md:mt-[0.5vh]">
+  <header>
+    <nav class="flex justify-between items-center w-[95%] md:w-[75%] h-[55px] md:h-[5vw] mx-auto mt-[1vh] md:mt-[0.5vh]">
       <!-- Logo -->
-      <div>
+      <div class="logo z-50">
         <a href="index.html">
-          <img class="w-12 md:w-auto cursor-pointer hover:scale-105 duration-300" src="assets/images/Mask group.svg"
-            alt="" />
+          <img class="w-[10vw] md:w-[5vw] cursor-pointer hover:scale-105 duration-300" src="assets/images/Mask group.svg" alt="Logo" />
         </a>
       </div>
-
+  
       <!-- Navigation Links -->
-      <div
-        class="nav-links z-50 md:static overflow-hidden absolute bg-05 md:bg-white md:min-h-fit min-h-[95%] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-0 px-5">
-        <ul
-          class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full">
+      <div class="nav-links z-40 fixed top-0 left-0 w-full bg-05 md:bg-white md:min-h-fit min-h-[95%] md:w-auto flex items-center md:px-0 px-5 transition-transform transform -translate-y-full md:translate-y-0 md:static z-50">
+        <ul class="flex md:flex-row md:text-[18px] text-[180%] mt-[-25vh] md:mt-[0%] font-outfit flex-col md:items-center items-center md:gap-[1.5vw] gap-6 text-02 w-full">
           <li>
             <img class="md:hidden ml-[60vw] w-14" src="assets/images/stars.svg" alt="" />
           </li>
-          <li>
-            <a class="menu hover:text-01 duration-300 active" href="index.html">Home</a>
-          </li>
-          <li>
-            <a class="menu hover:text-01 duration-300" href="aboutUs.html">About Us</a>
-          </li>
-          <li>
-            <a class="menu hover:text-01 duration-300" href="services.html">Services</a>
-          </li>
-          <li>
-            <a class="menu hover:text-01 duration-300" href="gallery.html">Gallery</a>
-          </li>
-          <li>
-            <a class="menu hover:text-01 duration-300" href="blog.html">Blog</a>
-          </li>
-          <li>
-            <a class="menu hover:text-01 duration-300" href="contactUs.html">Contact Us</a>
-          </li>
+          <li><a class="menu hover:text-01 duration-300 active md:text-[1.1vw] text-[6vw]" href="index.html">Home</a></li>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="aboutUs.html">About Us</a></li>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="services.html">Services</a></li>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="gallery.html">Gallery</a></li>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="blog.html">Blog</a></li>
+          <li><a class="menu hover:text-01 duration-300 md:text-[1.1vw] text-[6vw]" href="contactUs.html">Contact Us</a></li>
         </ul>
-        <div class="md:hidden w-full absolute font-alex text-06 opacity-5 ml-[-4vw] self-end text-[450%]">
-          <div>
-            <p class="w-full overflow-hidden whitespace-nowrap">
-              Beauty & Brawn Beauty & Brawn Beauty & Brawn Beauty & Brawn
-            </p>
-          </div>
-        </div>
       </div>
-
+  
       <!-- Button and Mobile Menu Icon -->
       <div class="flex items-center gap-6">
         <button>
-          <img class="hidden md:block w-36 hover:scale-105 duration-300" src="assets/images/Group 71.svg" alt="" />
+          <img class="hidden md:block w-[10vw] hover:scale-105 duration-300" src="assets/images/Group 71.svg" alt="Button" />
           <ion-icon name="menu" class="text-3xl text-01 cursor-pointer md:hidden" onclick="mobileMenu(this)"></ion-icon>
         </button>
       </div>
@@ -108,23 +86,21 @@
         <div class="hidden md:block">
           <div class="relative group cursor-pointer">
             <!-- Image -->
-            <img 
-              class="h-[17.5vw] w-[38.85vw] col-span-2 object-cover rounded-lg" 
-              src="assets/images/gallery/g1.jfif" 
+            <img class="h-[17.5vw] w-[38.85vw] col-span-2 object-cover rounded-lg" src="assets/images/gallery/g1.jfif"
               alt="">
-          
+
             <!-- Overlay -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
         </div>
 
         <div class="relative flex w-[92vw] md:w-[33.1vw] justify-between">
@@ -132,46 +108,39 @@
             <!-- Image -->
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[13.85vw] object-cover object-right md:object-[80%] rounded-lg mt-[8%] md:mt-[0%]"
-              src="assets/images/about us/about us 3.jpeg"
-              alt="">
-          
+              src="assets/images/about us/about us 3.jpeg" alt="">
+
             <!-- Overlay -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
-          
+
+
           <div class="relative group cursor-pointer">
             <!-- Image -->
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[17.60vw] object-cover object-center rounded-lg mt-[8%] md:mt-[0%]"
-              src="assets/images/gallery/g2.jfif" 
-              alt="">
-          
+              src="assets/images/gallery/g2.jfif" alt="">
+
             <!-- Overlay -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100  transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
-          
-          
-          
-          
-          
+
         </div>
 
         <div class="relative flex w-[92vw] md:w-[38.85vw] justify-between">
@@ -180,37 +149,37 @@
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[21.35vw] object-cover object-center rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/services details/second section third img.jpeg" alt="">
-          
+
             <!-- Overlay Effect on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
           <div class="relative group cursor-pointer">
             <!-- Image -->
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[15.94vw] object-cover object-center rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/gallery/g4.jfif" alt="">
-          
+
             <!-- Overlay Effect on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
         </div>
 
         <div class="relative flex w-[92vw] md:w-[33.1vw] justify-between">
@@ -219,37 +188,37 @@
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[20vw] object-cover object-top rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/gallery/g5.jfif" alt="">
-          
+
             <!-- Overlay Effect on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
           <div class="relative group cursor-pointer">
             <!-- Image -->
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[11.67vw] object-cover object-top rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/about us/follow us 3.jpeg" alt="">
-          
+
             <!-- Overlay on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
         </div>
 
         <div class="relative flex w-[92vw] md:w-[38.85vw] justify-between">
@@ -258,76 +227,73 @@
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[15.94vw] object-cover object-[0%_20%] rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/gallery/g7.jfif" alt="">
-          
+
             <!-- Overlay on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
           <div class="relative group cursor-pointer">
             <!-- Image -->
-            <img
-              class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[21.35vw] object-cover rounded-lg mt-[8%] md:mt-[-0%]"
+            <img class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[21.35vw] object-cover rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/about us/about us 1.jpeg" alt="">
-          
+
             <!-- Overlay on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
         </div>
 
         <div class="relative flex w-[92vw] md:w-[33.1vw] justify-between ">
           <div class="relative group cursor-pointer">
             <!-- Image -->
-            <img
-              class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[13.85vw] object-cover rounded-lg mt-[8%] md:mt-[-0%]"
+            <img class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[13.85vw] object-cover rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/gallery/g9.jfif" alt="">
-          
+
             <!-- Overlay on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
           <div class="relative group cursor-pointer">
             <!-- Image -->
-            <img
-              class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[17.60vw] object-cover rounded-lg mt-[8%] md:mt-[-0%]"
+            <img class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[17.60vw] object-cover rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/your skin.jpeg" alt="">
-          
+
             <!-- Overlay on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
         </div>
 
         <div class="relative flex w-[92vw] md:w-[38.85vw] justify-between">
@@ -336,37 +302,37 @@
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[21.35vw] object-cover object-center rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/gallery/g d 12.jfif" alt="">
-          
+
             <!-- Overlay on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
           <div class="relative group cursor-pointer">
             <!-- Image -->
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[15.94vw] object-cover object-center rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/about us/follow us 1.jpeg" alt="">
-          
+
             <!-- Overlay on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
         </div>
 
         <div class="relative flex w-[92vw] md:w-[33.1vw] justify-between">
@@ -375,41 +341,40 @@
             <img
               class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[20vw] object-cover object-right rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/gallery/g11.jfif" alt="">
-          
+
             <!-- Overlay on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
           <div class="relative group cursor-pointer">
             <!-- Image -->
-            <img
-              class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[11.67vw] object-cover rounded-lg mt-[8%] md:mt-[-0%]"
+            <img class="w-[44vw] h-[38.4vw] md:h-[17.5vw] md:w-[11.67vw] object-cover rounded-lg mt-[8%] md:mt-[-0%]"
               src="assets/images/about us/about 4.jpeg" alt="">
-          
+
             <!-- Overlay on Hover -->
-            <div 
+            <div
               class="absolute inset-0 bg-01/50 rounded-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <!-- Center Box with Black Blur -->
-              <div 
+              <div
                 class="w-[80%] h-[80%] bg-black/30 backdrop-blur-sm border-[1px] border-white rounded-lg flex items-center justify-center">
                 <!-- Search Icon -->
                 <img class="w-[2vw]" src="assets/images/search.svg" alt="">
               </div>
             </div>
           </div>
-          
+
         </div>
 
       </div>
-      
+
       <div class="absolute hidden md:block flex mt-[78%]  ml-[38%] ">
         <button>
           <img class="w-[10vw] hover:scale-105 duration-300" src="assets/images/load more red btn.svg" alt="">
